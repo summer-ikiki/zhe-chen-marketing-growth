@@ -1,0 +1,1990 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Zhe Chen | Marketing, Growth & Partnerships</title>
+    <meta
+      name="description"
+      content="Zhe Chen's comprehensive integrated marketing resume site, covering growth marketing, creator ecosystems, partnerships, events, entertainment and youth-culture communities, content, AI product GTM, North America execution, and global-platform fluency."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #17262d;
+        --muted: #5f7077;
+        --teal: #08706f;
+        --teal-2: #dcefee;
+        --gold: #c4a13b;
+        --rust: #a45f52;
+        --line: #d9e3e1;
+        --paper: #fbfbf8;
+        --soft: #eff6f4;
+        --dark: #16282f;
+        --max: 1180px;
+        --serif: "Source Serif 4", Georgia, serif;
+        --sans: Inter, Arial, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+
+      body {
+        margin: 0;
+        overflow-x: hidden;
+        background:
+          linear-gradient(rgba(8, 112, 111, 0.035) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(8, 112, 111, 0.035) 1px, transparent 1px),
+          var(--paper);
+        background-size: 72px 72px;
+        color: var(--ink);
+        font-family: var(--sans);
+        letter-spacing: 0;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 16px clamp(18px, 5vw, 56px);
+        border-bottom: 1px solid var(--line);
+        background: rgba(251, 251, 248, 0.94);
+        backdrop-filter: blur(14px);
+      }
+
+      .brand {
+        font-weight: 800;
+        font-size: 20px;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 22px;
+        color: var(--muted);
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .nav a:hover,
+      .nav a:focus-visible {
+        color: var(--teal);
+      }
+
+      .header-actions {
+        display: flex;
+        gap: 10px;
+        flex-shrink: 0;
+      }
+
+      .icon-button,
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        min-height: 44px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+        color: var(--ink);
+        font-weight: 800;
+        white-space: nowrap;
+        box-shadow: 0 12px 30px rgba(20, 35, 41, 0.06);
+      }
+
+      .icon-button {
+        width: 46px;
+        background: var(--dark);
+        color: #fff;
+      }
+
+      .button {
+        padding: 0 18px;
+      }
+
+      .button.primary {
+        border-color: var(--dark);
+        background: var(--dark);
+        color: #fff;
+      }
+
+      .language-toggle {
+        min-height: 44px;
+        padding: 0 14px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+        color: var(--ink);
+        cursor: pointer;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 900;
+        white-space: nowrap;
+        box-shadow: 0 12px 30px rgba(20, 35, 41, 0.06);
+      }
+
+      .language-toggle:hover,
+      .language-toggle:focus-visible {
+        border-color: var(--teal);
+        color: var(--teal);
+        outline: none;
+      }
+
+      .jump-rail {
+        position: fixed;
+        right: 18px;
+        top: 50%;
+        z-index: 40;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px;
+        border: 1px solid rgba(217, 227, 225, 0.9);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.86);
+        box-shadow: 0 16px 38px rgba(20, 35, 41, 0.1);
+        backdrop-filter: blur(14px);
+        transform: translateY(-50%);
+      }
+
+      .jump-rail a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        border: 1px solid transparent;
+        border-radius: 999px;
+        color: var(--muted);
+      }
+
+      .jump-rail a:hover,
+      .jump-rail a:focus-visible,
+      .jump-rail a.is-active {
+        border-color: rgba(8, 112, 111, 0.22);
+        background: var(--teal-2);
+        color: var(--teal);
+        outline: none;
+      }
+
+      .jump-rail svg {
+        width: 17px;
+        height: 17px;
+      }
+
+      .jump-label {
+        display: none;
+      }
+
+      html[data-edit-mode="true"] .jump-rail {
+        align-items: stretch;
+        border-radius: 18px;
+        padding: 10px;
+      }
+
+      html[data-edit-mode="true"] .jump-rail a {
+        justify-content: flex-start;
+        gap: 8px;
+        width: auto;
+        min-width: 116px;
+        padding: 0 10px;
+      }
+
+      html[data-edit-mode="true"] .jump-label {
+        display: inline;
+        font: 900 12px var(--sans);
+        white-space: nowrap;
+      }
+
+      main {
+        overflow: hidden;
+      }
+
+      section {
+        padding: clamp(54px, 7vw, 92px) clamp(18px, 5vw, 56px);
+        scroll-margin-top: 92px;
+      }
+
+      #top {
+        scroll-margin-top: 92px;
+      }
+
+      .inner {
+        max-width: var(--max);
+        margin: 0 auto;
+      }
+
+      .hero {
+        min-height: calc(100vh - 78px);
+        display: grid;
+        grid-template-columns: minmax(0, 1.04fr) minmax(320px, 0.86fr);
+        align-items: center;
+        gap: clamp(28px, 6vw, 72px);
+        padding-top: 38px;
+      }
+
+      .hero > * {
+        min-width: 0;
+      }
+
+      .eyebrow,
+      .section-kicker {
+        margin: 0 0 18px;
+        color: var(--teal);
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+        font-family: var(--serif);
+        letter-spacing: 0;
+        line-height: 0.96;
+      }
+
+      h1 {
+        max-width: 900px;
+        font-size: clamp(44px, 5.4vw, 78px);
+        line-height: 1.02;
+      }
+
+      html[lang="zh"] h1 {
+        max-width: 980px;
+        font-size: clamp(40px, 4.6vw, 62px);
+        line-height: 1.08;
+      }
+
+      h2 {
+        max-width: 900px;
+        font-size: clamp(38px, 6vw, 74px);
+      }
+
+      html[lang="zh"] h2 {
+        line-height: 1.08;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 23px;
+        line-height: 1.15;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .lede,
+      .section-intro {
+        max-width: 760px;
+        margin-top: 24px;
+        color: #32454d;
+        font-size: clamp(18px, 2.2vw, 26px);
+        line-height: 1.24;
+        font-weight: 700;
+      }
+
+      .lede strong,
+      .section-intro strong,
+      .metric-card span strong,
+      .case-card p strong,
+      .case-card li strong,
+      .ownership-card p strong,
+      .capability-detail p strong,
+      .evidence-card p strong {
+        color: #075f5f;
+        font-weight: 900;
+        background: linear-gradient(180deg, transparent 58%, rgba(196, 161, 59, 0.24) 0);
+        border-radius: 3px;
+        padding: 0 2px;
+      }
+
+      .contact-strip,
+      .hero-badges,
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 24px;
+      }
+
+      .pill,
+      .contact-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        min-height: 38px;
+        padding: 0 14px;
+        border: 1px solid #bddad9;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.82);
+        color: #255a5a;
+        font-size: 13px;
+        font-weight: 900;
+      }
+
+      .contact-item {
+        border: 0;
+        padding: 0 4px;
+        background: transparent;
+        color: var(--muted);
+      }
+
+      .hero-visual {
+        position: relative;
+        margin: 0;
+        min-height: 520px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 16px 18px 0 rgba(196, 161, 59, 0.95);
+      }
+
+      .hero-visual img {
+        width: 100%;
+        height: 100%;
+        min-height: 520px;
+        display: block;
+        object-fit: cover;
+      }
+
+      .proof-grid {
+        position: absolute;
+        left: 32px;
+        right: 32px;
+        top: 36px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: auto;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(20, 35, 41, 0.18);
+      }
+
+      .proof-grid span {
+        padding: 16px;
+        border-right: 1px solid rgba(20, 35, 41, 0.16);
+        border-bottom: 1px solid rgba(20, 35, 41, 0.16);
+      }
+
+      .proof-grid strong {
+        display: block;
+        color: var(--teal);
+        font-family: var(--serif);
+        font-size: clamp(30px, 4.4vw, 50px);
+        line-height: 0.95;
+      }
+
+      .proof-grid em {
+        display: block;
+        margin-top: 4px;
+        color: var(--muted);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 1.15;
+      }
+
+      .capability-band {
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        background: linear-gradient(110deg, rgba(8, 112, 111, 0.14), rgba(196, 161, 59, 0.12));
+      }
+
+      .experience-console {
+        padding-bottom: 32px;
+      }
+
+      .console-shell {
+        display: grid;
+        gap: 24px;
+      }
+
+      .filter-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 0.88fr) minmax(300px, 0.52fr);
+        gap: 30px;
+        align-items: stretch;
+        padding: 24px;
+        border: 1px solid rgba(8, 112, 111, 0.22);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.82);
+        box-shadow: 0 18px 38px rgba(23, 38, 45, 0.08);
+      }
+
+      .lens-controls {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .control-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        width: fit-content;
+        min-height: 34px;
+        padding: 0 12px;
+        border-radius: 999px;
+        background: var(--dark);
+        color: #fff;
+        font-size: 12px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .result-bridge {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 14px 18px;
+        border: 1px solid rgba(8, 112, 111, 0.2);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.72);
+        color: #385057;
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      .result-bridge i {
+        flex: 0 0 auto;
+        color: var(--teal);
+      }
+
+      .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .filter-button {
+        min-height: 46px;
+        padding: 0 16px;
+        border: 1px solid #b9d8d6;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.86);
+        color: #24595a;
+        cursor: pointer;
+        font: 900 14px var(--sans);
+      }
+
+      .filter-button[aria-pressed="true"] {
+        border-color: var(--dark);
+        background: var(--dark);
+        color: #fff;
+      }
+
+      .capability-detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 240px;
+        padding: 24px;
+        border: 1px solid #c8dddd;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.84);
+      }
+
+      .capability-detail strong {
+        color: var(--teal);
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+
+      .capability-detail h3 {
+        margin-top: 12px;
+        font-family: var(--serif);
+        font-size: clamp(30px, 4vw, 48px);
+      }
+
+      .capability-detail p {
+        margin-top: 16px;
+        color: #40535b;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 1.35;
+      }
+
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-top: 34px;
+      }
+
+      .ownership-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .ownership-card {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.88);
+        padding: 28px;
+        box-shadow: 0 12px 28px rgba(23, 38, 45, 0.05);
+      }
+
+      .ownership-card h3 {
+        font-family: var(--serif);
+        font-size: clamp(30px, 4vw, 46px);
+      }
+
+      .ownership-card p {
+        margin-top: 14px;
+        color: #3c4e56;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 1.38;
+      }
+
+      .ops-flow {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .ops-flow span {
+        min-height: 54px;
+        display: flex;
+        align-items: center;
+        border-left: 4px solid var(--teal);
+        background: #eef6f4;
+        padding: 10px 12px;
+        color: #21363d;
+        font-size: 13px;
+        font-weight: 900;
+        line-height: 1.2;
+      }
+
+      .metric-card,
+      .case-card,
+      .evidence-card {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.88);
+        box-shadow: 0 12px 28px rgba(23, 38, 45, 0.05);
+      }
+
+      .metric-card {
+        padding: 22px;
+        border-top: 6px solid var(--teal);
+      }
+
+      .metric-card > strong {
+        display: block;
+        color: var(--teal);
+        font-family: var(--serif);
+        font-size: clamp(42px, 5.2vw, 68px);
+        line-height: 0.9;
+      }
+
+      .metric-card span {
+        display: block;
+        margin-top: 14px;
+        color: #44565e;
+        font-weight: 600;
+        line-height: 1.35;
+      }
+
+      .cases-section {
+        background: rgba(255, 255, 255, 0.44);
+      }
+
+      .experience-results {
+        padding-top: 34px;
+      }
+
+      .results-heading {
+        display: grid;
+        grid-template-columns: minmax(0, 0.85fr) minmax(260px, 0.45fr);
+        gap: 26px;
+        align-items: end;
+      }
+
+      .results-heading h2 {
+        font-size: clamp(36px, 5vw, 62px);
+      }
+
+      .case-tools {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        margin-top: 0;
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.84);
+        color: var(--muted);
+        font-weight: 700;
+      }
+
+      .case-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .case-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding: 28px;
+        transition: border-color 160ms ease, background 160ms ease, box-shadow 160ms ease, outline-color 160ms ease, transform 160ms ease;
+      }
+
+      .case-card.is-match {
+        border-color: var(--teal);
+        outline: 2px solid rgba(8, 112, 111, 0.34);
+        outline-offset: 3px;
+        background:
+          linear-gradient(180deg, rgba(8, 112, 111, 0.13), rgba(255, 255, 255, 0.95) 46%),
+          #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 20px 44px rgba(8, 112, 111, 0.18);
+      }
+
+      .case-card.is-supporting,
+      .case-card.is-dimmed {
+        opacity: 1 !important;
+        border-color: var(--line);
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 12px 28px rgba(23, 38, 45, 0.05);
+      }
+
+      .card-kicker {
+        color: var(--rust);
+        font-size: 13px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .case-card p {
+        color: #3c4e56;
+        font-size: 16px;
+        font-weight: 580;
+        line-height: 1.42;
+      }
+
+      .case-card ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .case-card li {
+        margin: 9px 0;
+        color: #273941;
+        font-weight: 600;
+        line-height: 1.36;
+      }
+
+      .case-card li.is-highlight {
+        padding: 6px 8px;
+        border-left: 4px solid var(--gold);
+        background: rgba(196, 161, 59, 0.18);
+        color: #17262d;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .tag {
+        padding: 7px 10px;
+        border: 1px solid #c6dddd;
+        border-radius: 999px;
+        color: #255a5a;
+        font-size: 12px;
+        font-weight: 900;
+      }
+
+      .evidence-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 26px;
+      }
+
+      .evidence-card {
+        padding: 22px;
+      }
+
+      .evidence-card i {
+        color: var(--teal);
+        width: 26px;
+        height: 26px;
+      }
+
+      .evidence-card h3 {
+        margin-top: 16px;
+        font-size: 20px;
+      }
+
+      .evidence-card p {
+        margin-top: 10px;
+        color: #3d5058;
+        font-weight: 600;
+        line-height: 1.38;
+      }
+
+      .closing {
+        background: var(--dark);
+        color: #fff;
+      }
+
+      .closing .inner {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 24px;
+        align-items: center;
+      }
+
+      .closing h2 {
+        color: #fff;
+      }
+
+      .closing .section-kicker {
+        color: #9bddda;
+      }
+
+      .closing .button {
+        border-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .edit-toolbar {
+        position: fixed;
+        left: 50%;
+        bottom: 18px;
+        z-index: 90;
+        display: none;
+        align-items: center;
+        gap: 10px;
+        width: min(calc(100vw - 28px), 820px);
+        padding: 12px;
+        border: 1px solid rgba(8, 112, 111, 0.22);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 20px 48px rgba(20, 35, 41, 0.16);
+        backdrop-filter: blur(16px);
+        transform: translateX(-50%);
+      }
+
+      .edit-toolbar strong,
+      .edit-toolbar span {
+        font-size: 13px;
+        line-height: 1.2;
+      }
+
+      .edit-toolbar strong {
+        color: var(--teal);
+        font-weight: 900;
+        white-space: nowrap;
+      }
+
+      .edit-toolbar span {
+        color: var(--muted);
+        font-weight: 700;
+      }
+
+      .edit-toolbar .edit-spacer {
+        flex: 1;
+      }
+
+      .edit-toolbar button {
+        min-height: 36px;
+        padding: 0 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+        color: var(--ink);
+        cursor: pointer;
+        font: 800 12px var(--sans);
+        white-space: nowrap;
+      }
+
+      .edit-toolbar button:hover,
+      .edit-toolbar button:focus-visible {
+        border-color: var(--teal);
+        color: var(--teal);
+        outline: none;
+      }
+
+      html[data-edit-mode="true"] .edit-toolbar {
+        display: flex;
+      }
+
+      html[data-edit-mode="true"] [contenteditable="true"] {
+        border-radius: 5px;
+        outline: 1px dashed rgba(8, 112, 111, 0.28);
+        outline-offset: 3px;
+        cursor: text;
+      }
+
+      html[data-edit-mode="true"] [contenteditable="true"]:focus {
+        background: rgba(255, 255, 255, 0.96);
+        outline: 2px solid rgba(8, 112, 111, 0.5);
+        box-shadow: 0 0 0 5px rgba(8, 112, 111, 0.08);
+      }
+
+      html[data-edit-mode="true"] [data-edit-dirty="true"] {
+        background: linear-gradient(180deg, rgba(196, 161, 59, 0.14), rgba(196, 161, 59, 0.06));
+      }
+
+      @media (max-width: 980px) {
+        .nav {
+          display: none;
+        }
+
+        .jump-rail {
+          right: 10px;
+          gap: 6px;
+          padding: 7px;
+        }
+
+        .jump-rail a {
+          width: 30px;
+          height: 30px;
+        }
+
+        .jump-rail svg {
+          width: 15px;
+          height: 15px;
+        }
+
+        .hero,
+        .filter-panel,
+        .results-heading,
+        .ownership-grid,
+        .closing .inner {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          min-height: auto;
+        }
+
+        .metrics,
+        .evidence-grid,
+        .ops-flow {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .case-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .jump-rail {
+          display: none;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .site-header {
+          left: 0;
+          right: 0;
+          width: auto;
+          max-width: 100%;
+          gap: 10px;
+          padding: 12px 14px;
+        }
+
+        .brand {
+          font-size: 18px;
+        }
+
+        .language-toggle,
+        .icon-button {
+          min-height: 40px;
+        }
+
+        .language-toggle {
+          padding: 0 9px;
+          font-size: 12px;
+        }
+
+        .icon-button {
+          display: none;
+        }
+
+        .header-actions .button {
+          display: none;
+        }
+
+        section {
+          width: 100%;
+          padding: 46px 18px;
+        }
+
+        .inner,
+        .hero,
+        .hero > div,
+        .actions,
+        .hero-badges,
+        .contact-strip,
+        .hero-visual {
+          width: 100%;
+          max-width: 340px;
+          margin-left: 0;
+          margin-right: auto;
+        }
+
+        h1 {
+          max-width: 100%;
+          font-size: 28px;
+          line-height: 1.08;
+          overflow-wrap: break-word;
+        }
+
+        html[lang="zh"] h1 {
+          font-size: 38px;
+          line-height: 1.12;
+        }
+
+        h2 {
+          font-size: 38px;
+        }
+
+        .lede,
+        .section-intro {
+          max-width: 100%;
+          font-size: 16px;
+          overflow-wrap: break-word;
+        }
+
+        .hero-badges,
+        .contact-strip,
+        .actions {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        .contact-strip {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        .contact-item {
+          max-width: 100%;
+          overflow-wrap: anywhere;
+        }
+
+        .actions .button {
+          min-width: 0;
+          width: 100%;
+          white-space: normal;
+          text-align: center;
+        }
+
+        .hero-visual,
+        .hero-visual img {
+          min-height: 420px;
+        }
+
+        .hero-visual {
+          width: 100%;
+          box-shadow: 0 12px 0 rgba(196, 161, 59, 0.9);
+        }
+
+        .proof-grid {
+          left: 16px;
+          right: 16px;
+          width: auto;
+          top: 18px;
+        }
+
+        .proof-grid span {
+          padding: 12px;
+        }
+
+        .metrics,
+        .evidence-grid,
+        .ops-flow {
+          grid-template-columns: 1fr;
+        }
+
+        .case-card,
+        .capability-detail,
+        .filter-panel {
+          padding: 20px;
+        }
+
+        .result-bridge,
+        .case-tools {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .edit-toolbar {
+          left: 14px;
+          right: 14px;
+          bottom: 12px;
+          flex-wrap: wrap;
+          width: auto;
+          transform: none;
+        }
+
+        .edit-toolbar .edit-spacer {
+          display: none;
+        }
+
+        .edit-toolbar button {
+          flex: 1 1 auto;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .inner {
+          max-width: 340px;
+        }
+
+        h1 {
+          font-size: 27px;
+        }
+
+        html[lang="zh"] h1 {
+          font-size: 36px;
+        }
+
+        .button {
+          padding: 0 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top">Zhe Chen</a>
+      <nav class="nav" aria-label="Page navigation">
+        <a href="#outcomes">Outcomes</a>
+        <a href="#system">System</a>
+        <a href="#capabilities">Lens</a>
+        <a href="#cases">Experience</a>
+        <a href="#evidence">Signals</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="language-toggle" type="button" id="languageToggle" aria-label="Switch language" aria-pressed="false">EN / 中文</button>
+        <a class="button" href="assets/Zhe-Chen-Integrated-Marketing-Resume.pdf" target="_blank" rel="noreferrer">Resume PDF</a>
+        <a class="icon-button" href="assets/Zhe-Chen-Integrated-Marketing-Resume.pdf" target="_blank" rel="noreferrer" aria-label="Open resume PDF"><i data-lucide="file-text"></i></a>
+      </div>
+    </header>
+
+    <aside class="jump-rail" aria-label="Section shortcuts">
+      <a href="#top" aria-label="Top" title="Top"><i data-lucide="arrow-up"></i><span class="jump-label">Top</span></a>
+      <a href="#outcomes" aria-label="Outcomes" title="Outcomes"><i data-lucide="bar-chart-3"></i><span class="jump-label">Outcomes</span></a>
+      <a href="#system" aria-label="Operating system" title="System"><i data-lucide="workflow"></i><span class="jump-label">System</span></a>
+      <a href="#capabilities" aria-label="Capability lens" title="Lens"><i data-lucide="sliders-horizontal"></i><span class="jump-label">Lens</span></a>
+      <a href="#cases" aria-label="Experience" title="Experience"><i data-lucide="layers-3"></i><span class="jump-label">Experience</span></a>
+      <a href="#evidence" aria-label="Signals" title="Signals"><i data-lucide="badge-check"></i><span class="jump-label">Signals</span></a>
+      <a href="#contact" aria-label="Contact" title="Contact"><i data-lucide="send"></i><span class="jump-label">Contact</span></a>
+    </aside>
+
+    <main id="top">
+      <section>
+        <div class="inner hero">
+          <div>
+            <p class="eyebrow">Integrated Marketing, Growth & Partnerships Leader</p>
+            <h1>Integrated Growth Systems Across Creators, Communities & Partnerships.</h1>
+            <p class="lede">
+              I turn ambiguous growth goals into launch systems across <strong>creator ecosystems</strong>, strategic partnerships, <strong>North America</strong> execution, global creator platforms, and cross-market expansion: positioning, creator/KOL networks, campus/community distribution, field activations, and paid/data loops.
+            </p>
+            <div class="hero-badges">
+              <span class="pill">End-to-end growth owner</span>
+              <span class="pill">800% user growth</span>
+              <span class="pill">100M+ content views</span>
+              <span class="pill">2K+ influencer resources</span>
+              <span class="pill">North America + global GTM</span>
+            </div>
+            <div class="contact-strip">
+              <span class="contact-item"><i data-lucide="map-pin"></i>Los Angeles, CA</span>
+              <a class="contact-item" href="mailto:summer.ikiki@gmail.com"><i data-lucide="mail"></i>summer.ikiki@gmail.com</a>
+              <a class="contact-item" href="tel:+14242848889"><i data-lucide="phone"></i>(1) 424-284-8889</a>
+              <span class="contact-item"><i data-lucide="message-circle"></i>WeChat: chenzheCZZZ</span>
+              <span class="contact-item"><i data-lucide="instagram"></i>Instagram: summer_ikiki</span>
+            </div>
+            <div class="actions">
+              <a class="button primary" href="assets/Zhe-Chen-Integrated-Marketing-Resume.pdf" target="_blank" rel="noreferrer"><i data-lucide="download"></i>Download Resume</a>
+              <a class="button" href="https://summer-ikiki.github.io/zhe-chen-portfolio/" target="_blank" rel="noreferrer"><i data-lucide="folder-open"></i>Portfolio</a>
+              <a class="button" href="https://www.linkedin.com/in/chen-zhe/" target="_blank" rel="noreferrer"><i data-lucide="external-link"></i>LinkedIn</a>
+            </div>
+          </div>
+          <figure class="hero-visual">
+            <img src="assets/hero-ai-gtm-workflow.png" alt="Marketing, campaign planning, analytics, and creative workflow materials" />
+            <div class="proof-grid">
+              <span><strong>100M+</strong><em>content views</em></span>
+              <span><strong>2K+</strong><em>influencer resources</em></span>
+              <span><strong>800%</strong><em>user growth</em></span>
+              <span><strong>30+</strong><em>offline activations</em></span>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section id="outcomes">
+        <div class="inner">
+          <p class="section-kicker">Selected Outcomes</p>
+          <h2>Large, varied, and measurable marketing signals.</h2>
+          <div class="metrics">
+            <article class="metric-card"><strong>100M+</strong><span><strong>Cross-platform content views</strong> across public-facing social, video, film/media, creator, and content projects.</span></article>
+            <article class="metric-card"><strong>1M+</strong><span>Led <strong>integrated marketing</strong> and helped a brand grow from 0 to 1M+ users through creator/community content, campus programs, partnerships, and campaign execution.</span></article>
+            <article class="metric-card"><strong>100K+</strong><span><strong>Partner-channel sign-ups</strong> through partner-led collaboration, campaign follow-up, and campus/community distribution.</span></article>
+            <article class="metric-card"><strong>2,000+</strong><span><strong>Influencer / KOL / KOC resources</strong> for creator-led marketing and co-marketing.</span></article>
+            <article class="metric-card"><strong>8x / 10x</strong><span><strong>User growth and revenue growth within one year</strong> through paid media, local partnerships, campus channels, and BD execution.</span></article>
+            <article class="metric-card"><strong>Top 0.03%</strong><span><strong>Founder/team-lead recognition</strong> in national entrepreneurship competitions, including Internet+ National Silver and <strong>5 national-level entrepreneurship awards</strong>.</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="system">
+        <div class="inner ownership-grid">
+          <article class="ownership-card">
+            <p class="section-kicker">End-to-End Growth Ownership</p>
+            <h3>From market thesis to execution system.</h3>
+            <p>I own growth from <strong>market thesis</strong> to execution system: define positioning, build <strong>campaign and partner motions</strong>, mobilize creator/vendor/community resources, coordinate cross-functional launches, track KPI quality, and turn early wins into repeatable playbooks.</p>
+            <div class="ops-flow">
+              <span>Market insight</span>
+              <span>Positioning</span>
+              <span>Creator / KOL map</span>
+              <span>Partner pipeline</span>
+              <span>Campaign package</span>
+              <span>Launch calendar</span>
+              <span>Live activation</span>
+              <span>Conversion loop</span>
+              <span>KPI dashboard</span>
+            </div>
+          </article>
+          <article class="ownership-card">
+            <p class="section-kicker">What I Can Own</p>
+            <h3>From strategy room to launch floor.</h3>
+            <p><strong>North America GTM</strong>, AI consumer product growth, creator/KOL ecosystem buildout, campus/community expansion, partnership-led acquisition, experiential campaigns, paid/data loops, cross-cultural stakeholder alignment, and growth reporting.</p>
+            <div class="ops-flow">
+              <span>North America GTM</span>
+              <span>Creator ecosystem</span>
+              <span>Campus growth</span>
+              <span>BD partnerships</span>
+              <span>Field events</span>
+              <span>Paid/data review</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="capabilities" class="capability-band experience-console">
+        <div class="inner console-shell">
+          <div>
+            <p class="section-kicker">Interactive Capability Map</p>
+            <h2>Choose a growth lens, then scan the ranked evidence below.</h2>
+            <p class="section-intro">Select the capability a hiring team cares about. The experience cards directly below reorder by relevance, while matching proof points stay highlighted.</p>
+          </div>
+          <div class="filter-panel">
+            <div class="lens-controls">
+              <span class="control-label"><i data-lucide="mouse-pointer-click"></i>Choose a lens</span>
+              <div class="filter-buttons" role="toolbar" aria-label="Capability filters">
+                <button class="filter-button" type="button" data-filter="all" aria-pressed="true">All</button>
+                <button class="filter-button" type="button" data-filter="creator">Creator Growth</button>
+                <button class="filter-button" type="button" data-filter="campaigns">Integrated Campaigns</button>
+                <button class="filter-button" type="button" data-filter="gaming">Entertainment / Youth Culture</button>
+                <button class="filter-button" type="button" data-filter="influencer">Influencer / KOL</button>
+                <button class="filter-button" type="button" data-filter="partnerships">Partnerships / BD</button>
+                <button class="filter-button" type="button" data-filter="community">Community Growth</button>
+                <button class="filter-button" type="button" data-filter="events">Experiential Events</button>
+                <button class="filter-button" type="button" data-filter="data">Paid / Data</button>
+                <button class="filter-button" type="button" data-filter="ai">AI / Product GTM</button>
+                <button class="filter-button" type="button" data-filter="crossborder">NA + Global</button>
+              </div>
+            </div>
+            <aside class="capability-detail" aria-live="polite">
+              <div>
+                <strong id="activeKicker">All capabilities</strong>
+                <h3 id="activeTitle">An end-to-end growth leader across strategy, execution, and operating systems.</h3>
+                <p id="activeText">Built repeatable growth systems across campaign strategy, creator networks, partnerships, live activations, community conversion, data optimization, content production, and AI-native product adoption.</p>
+              </div>
+              <p id="activeCount">Showing all experience cards.</p>
+            </aside>
+          </div>
+          <div class="result-bridge">
+            <span>The evidence below updates immediately: most relevant experience first.</span>
+            <i data-lucide="arrow-down"></i>
+          </div>
+        </div>
+      </section>
+
+      <section id="cases" class="cases-section experience-results">
+        <div class="inner">
+          <div class="results-heading">
+            <div>
+              <p class="section-kicker">Ranked Experience</p>
+              <h2>Experience mapped to the selected growth lens.</h2>
+            </div>
+            <div class="case-tools">
+              <span id="sortNote">Showing the full growth portfolio.</span>
+              <span>Key outcomes are highlighted for the selected lens.</span>
+            </div>
+          </div>
+          <div class="case-grid" id="caseGrid">
+            <article class="case-card" data-tags="creator campaigns influencer partnerships community events data ai crossborder" data-index="1">
+              <div class="card-kicker">AI Consumer Growth</div>
+              <h3>DITTO.AI: integrated campus, creator, partner, and field marketing</h3>
+              <p>Marketing Director & Growth Lead for an AI-native dating/social product, connecting partner-led acquisition, creative field activation, community conversion, product data, and AI workflow adoption.</p>
+              <ul>
+                <li data-tags="creator campaigns community events influencer partnerships">Drove <strong>800% user growth</strong> and scaled to <strong>150K+ cumulative users</strong> through campus activation, creator/influencer marketing, original video, field marketing, community channels, and partner-led distribution.</li>
+                <li data-tags="creator campaigns events influencer partnerships">Built a viral campus growth matrix across creative posters, a high-performing offline/yacht activation, influencer marketing, original short-form videos, ambassador/community channels, and conversion follow-up.</li>
+                <li data-tags="partnerships data">Owned growth execution for a major partner-led campus campaign with <strong>73K+ registrations</strong>, <strong>32K+ matches</strong>, and coverage across <strong>733 U.S. universities</strong>; broader partner-channel work produced <strong>100K+ sign-ups</strong>.</li>
+                <li data-tags="data ai">Analyzed funnel and match-pair behavior across <strong>72K+ partner-channel users</strong> and <strong>32K+ match pairs</strong>, identifying dormant segments and a <strong>48-hour engagement window</strong> to sharpen re-engagement strategy and campaign follow-up.</li>
+                <li data-tags="data partnerships">Identified a high-conversion targeted community channel with <strong>26.8% email verification rate</strong>, approximately <strong>20x above</strong> platform average, and translated the insight into acquisition recommendations.</li>
+                <li data-tags="ai campaigns">Built DPU, an <strong>AI-powered product knowledge base</strong> for product specs, operating context, campaign learnings, and reusable launch materials.</li>
+              </ul>
+              <div class="tags"><span class="tag">AI social</span><span class="tag">Creator</span><span class="tag">Events</span><span class="tag">Data</span></div>
+            </article>
+
+            <article class="case-card" data-tags="creator campaigns partnerships community events data crossborder" data-index="2">
+              <div class="card-kicker">North America Growth</div>
+              <h3>ENCMOBILE: paid media, local partnerships, campus events, and revenue growth</h3>
+              <p>Growth Marketing & BD Manager building a student-market marketing system across paid acquisition, local partners, campus communities, event channels, and performance reviews.</p>
+              <ul>
+                <li data-tags="campaigns data">Delivered <strong>8x user growth</strong> and <strong>10x revenue growth within one year</strong> through Google Ads, Meta Ads, Amazon Ads, Baidu SEO/SEM, campus channels, local partnerships, and student/community activations.</li>
+                <li data-tags="creator partnerships community crossborder">Built student-organization and campus-community relationships across <strong>70+ U.S. universities</strong>, including Harvard, Stanford, Cornell, Yale, UCLA, and USC.</li>
+                <li data-tags="partnerships">Negotiated and managed partnerships with <strong>40+ vendors</strong> and <strong>60+ student organizations</strong>, supporting partner evaluation, campaign launch, optimization, and relationship maintenance.</li>
+                <li data-tags="creator events">Coordinated <strong>60+ North American university events annually</strong>, building a practical resource base across venues, vendors, media partners, campus organizations, and ambassadors.</li>
+                <li data-tags="creator campaigns partnerships community">Led integrated marketing and BD collaboration from 0 to 1, helping the brand break through <strong>1M+ users</strong> during my tenure.</li>
+                <li data-tags="data">Built Tableau-based KPI and budget review routines, reducing partnership costs by <strong>50%</strong> and improving channel pacing.</li>
+                <li data-tags="data partnerships">Managed <strong>million-dollar-level budgets</strong> and a <strong>50+ person execution network</strong>; awarded <strong>Best Sales Champion (2024)</strong> for business impact and execution.</li>
+              </ul>
+              <div class="tags"><span class="tag">Paid media</span><span class="tag">BD</span><span class="tag">Events</span><span class="tag">Dashboards</span></div>
+            </article>
+
+            <article class="case-card" data-tags="creator campaigns influencer partnerships community events data ai crossborder" data-index="3">
+              <div class="card-kicker">Founder-Led Marketing</div>
+              <h3>PANDAPAL: creator ecosystem, brand resources, and AI campus community</h3>
+              <p>Founder of a global digital solutions provider / marketing agency and AI campus community product, connecting creators, students, brands, social content, and product GTM.</p>
+              <ul>
+                <li data-tags="creator community campaigns">Built a 0-to-1 community system with <strong>100K+ community reach</strong>, <strong>80K+ campus network</strong>, 50+ active groups, and multi-platform Discord / WeChat / Telegram / RED / TikTok operations.</li>
+                <li data-tags="creator influencer partnerships">Built <strong>2,000+ influencer / KOL / KOC resources</strong> and <strong>200+ brand collaboration resources</strong> for creator-led marketing, co-marketing, and Founder-led commercial conversations.</li>
+                <li data-tags="creator partnerships campaigns">Built both a youth community brand and a marketing / digital solutions business, delivering creator/community, content, event, and campaign solutions for <strong>200+ brands and partners</strong> while validating <strong>3 monetization models</strong>.</li>
+                <li data-tags="creator campaigns events">Orchestrated <strong>20+ digital campaigns</strong> reaching 600K+ users and organized 30+ campus/community events for partner campaigns and student-market distribution.</li>
+                <li data-tags="creator campaigns community">Grew Xiaohongshu from 0 to <strong>7K+ followers</strong>; debut post reached <strong>1M views</strong> and converted 1,000 targeted users into private communities.</li>
+                <li data-tags="ai data">Designed an AI/GIS/GPS-enabled campus lifestyle product concept using 500+ survey responses, PRD/BP, prototype, and acquisition-channel validation.</li>
+              </ul>
+              <div class="tags"><span class="tag">KOL/KOC</span><span class="tag">Brands</span><span class="tag">Community</span><span class="tag">AI campus</span></div>
+            </article>
+
+            <article class="case-card" data-tags="creator gaming community campaigns partnerships data" data-index="4">
+              <div class="card-kicker">Gaming-Adjacent Community</div>
+              <h3>STAR REALMS: VR game / metaverse community and launch planning</h3>
+              <p>Product Marketing & Community Lead for a VR social metaverse / game startup, building early community infrastructure and launch materials.</p>
+              <ul>
+                <li data-tags="creator gaming community">Built and managed a <strong>50K+ cross-platform community</strong> across Discord, WeChat, Telegram, TikTok, LinkedIn, X, Xiaohongshu, and Zhihu.</li>
+                <li data-tags="creator gaming community">Built Discord-centered community operations, including server structure, roles/permissions, bots, engagement loops, conversion paths, moderation, and retention feedback.</li>
+                <li data-tags="gaming campaigns data">Built <strong>0-to-1 VR game/social product launch infrastructure</strong> and supported a <strong>$400K fundraise</strong> through university partnerships, seed-user feedback loops, product education content, and 10+ product / market strategy decks.</li>
+              </ul>
+              <div class="tags"><span class="tag">VR game</span><span class="tag">Discord</span><span class="tag">Launch</span></div>
+            </article>
+
+            <article class="case-card" data-tags="creator gaming campaigns influencer partnerships community ai crossborder" data-index="5">
+              <div class="card-kicker">Entertainment + AI Workflow</div>
+              <h3>PEACHJAM / Legend Co-Shooting: AI + film resource-sharing platform</h3>
+              <p>Founder of an AI-assisted film/video production platform, with direct exposure to creators, production partners, sponsor conversations, content workflows, and entertainment distribution.</p>
+              <ul>
+                <li data-tags="ai gaming">Founded an AI-assisted production platform for creator collaboration, production-resource matching, and workflow automation; won national entrepreneurship awards including Internet+ National Silver and Challenge Cup National Bronze.</li>
+                <li data-tags="creator influencer community partnerships">Built a <strong>3,000+ professional creator community</strong> and aggregated <strong>6,000+ film production resources</strong>.</li>
+                <li data-tags="ai campaigns">Designed AI-assisted workflow modules from script/storyboard import to scene breakdown, shot lists, shooting schedules, props lists, camera movement guidance, editing templates, and auto-subtitles.</li>
+                <li data-tags="gaming campaigns crossborder">Produced and distributed <em>Mount & Sea</em>, reaching <strong>1.114M Bilibili views</strong> and 105K likes in week one; wrote scripts for Tencent Video variety content with <strong>27.5M+ cumulative plays</strong>.</li>
+                <li data-tags="partnerships events data">Supported Pacific Creative Park BD and operations for a <strong>28,000 sqm</strong> creative park, closing <strong>20+ merchant deals</strong>, supporting <strong>100% occupancy</strong>, and generating approximately <strong>RMB 500K incremental annual revenue</strong>.</li>
+              </ul>
+              <div class="tags"><span class="tag">Film</span><span class="tag">Bilibili</span><span class="tag">Tencent Video</span><span class="tag">AI workflow</span></div>
+            </article>
+
+            <article class="case-card" data-tags="campaigns community events data crossborder" data-index="6">
+              <div class="card-kicker">Commerce + Campus</div>
+              <h3>YAMI, HungryPanda, Wanda, agency experience: conversion, events, and media strategy</h3>
+              <p>Earlier marketing roles covering e-commerce conversion, food delivery campus campaigns, film sponsorships, enterprise PR/media planning, and release marketing.</p>
+              <ul>
+                <li data-tags="community data">At YAMI, built 10+ customer communities with 2,000+ members; achieved <strong>22% conversion</strong>, <strong>60% repurchase</strong>, <strong>1M+ campaign reach</strong>, <strong>25% ROI improvement</strong>, and <strong>$50K direct order conversions</strong>; awarded Sales Champion.</li>
+                <li data-tags="events community">At HungryPanda, produced <strong>10+ viral Xiaohongshu posts</strong> and <strong>6 high-performing WeChat articles</strong> with 1,000+ likes each, planned <strong>20+ campus campaigns</strong>, added <strong>1,500+ users</strong>, and built 8 active communities.</li>
+                <li data-tags="gaming events partnerships">At Wanda Wuzhou Film Distribution, led <strong>10+ campus screenings</strong> with <strong>1,200+ attendees</strong>, approx. <strong>70% community join rate</strong>, 50% repeat participation lift, and <strong>5 brand sponsorships</strong>.</li>
+                <li data-tags="campaigns data">At Skywalker Communications, contributed to enterprise PR, branding, and media strategy for Weichai Power and Sinotruk, including <strong>CCTV media-plan evaluation</strong>, campaign pacing, KPI alignment, and post-campaign performance reviews; improved exposure / share-of-voice by approximately <strong>30%</strong>.</li>
+                <li data-tags="gaming campaigns">At Beijing Hengdian Film Group, delivered 3 release / marketing plans and improved creative asset consistency by approximately <strong>20%</strong> through audience research, focus groups, trailers, and key-art refinement.</li>
+                <li data-tags="campaigns crossborder">At Sohu Media, led campus promotion for Sofa Video and won <strong>Best Intern</strong> as the <strong>#1-ranked intern in the cohort</strong>.</li>
+              </ul>
+              <div class="tags"><span class="tag">E-commerce</span><span class="tag">Campus</span><span class="tag">Film</span><span class="tag">4A</span></div>
+            </article>
+
+            <article class="case-card" data-tags="creator ai influencer campaigns community crossborder data" data-index="7">
+              <div class="card-kicker">AI-Native + Creator Influence</div>
+              <h3>AI tools, BrandYou, SWAP, and public creator signals</h3>
+              <p>Public-facing projects that show AI adoption, creator trust, social content judgment, and platform-native growth beyond company roles.</p>
+              <ul>
+                <li data-tags="creator ai campaigns">Built a Xiaohongshu Viral Copywriting AI Agent on Coze, ranked <strong>#1</strong> on Xiaohongshu&apos;s copywriting tool leaderboard with <strong>12,400+ users</strong>.</li>
+                <li data-tags="creator ai crossborder influencer">Co-founded BrandYou and published a Claude Code tutorial with <strong>100K+ WeChat reads</strong>, <strong>11K+ shares</strong>, 2,467 likes, and 1,092 saves/favorites.</li>
+                <li data-tags="creator campaigns community">As Co-Founder & Marketing Partner for SWAP, drove <strong>100K+ users</strong> through product positioning, Xiaohongshu growth, offline activation, and user education.</li>
+                <li data-tags="creator influencer campaigns">Public creator signals include <strong>30M+ Zhihu views</strong>, <strong>6M-view Weibo post</strong>, <strong>1M Xiaohongshu debut note</strong>, and <strong>400K+ TikTok likes</strong> for MoreThanHugs.</li>
+              </ul>
+              <div class="tags"><span class="tag">AI adoption</span><span class="tag">RED</span><span class="tag">WeChat</span><span class="tag">Creator signals</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="evidence">
+        <div class="inner">
+          <p class="section-kicker">Credential Layer</p>
+          <h2>Additional signals that support senior marketing trust.</h2>
+          <div class="evidence-grid">
+            <article class="evidence-card"><i data-lucide="trophy"></i><h3>National awards & founder honors</h3><p>Founder/team lead for national entrepreneurship awards, including Internet+ National Silver from 3.4M+ entries, Challenge Cup National Bronze, 5 national-level entrepreneurship awards, and National College Social Practice Competition #2; additional founder honors include the sole cohort Entrepreneurship Grand Prize Scholarship and the university&apos;s sole Beijing Outstanding Entrepreneurial Team Leader recognition.</p></article>
+            <article class="evidence-card"><i data-lucide="radio"></i><h3>Public platform influence</h3><p>Zhihu 15K+ followers and 30M+ views; Weibo 10K+ followers, V Light Program, and 6M-view post; Xiaohongshu 1M debut note; TikTok 400K+ likes; plus Bilibili/Tencent Video entertainment signals.</p></article>
+            <article class="evidence-card"><i data-lucide="bar-chart-3"></i><h3>Performance stack</h3><p>Google Ads, Meta Ads, Amazon Ads, Baidu SEO/SEM, GA4, PostHog, Tableau, Excel, UTM tracking, funnel analysis, ROI review, and budget pacing.</p></article>
+            <article class="evidence-card"><i data-lucide="languages"></i><h3>North America + global fluency</h3><p>USC Annenberg MS in Digital Social Media, U.S.-based campus/community leadership, USC Student Success Fund recipient, PR Leader at USC Chinese Graduate Student Association, Founder of USC Chinese Student Digital Community, Mandarin native, and full professional English.</p></article>
+            <article class="evidence-card"><i data-lucide="badge-check"></i><h3>Research & IP signals</h3><p>2 national patents, including one invention patent; EI-indexed paper; and contribution to <em>The Essence of Chinese Folk Culture</em>, adding credibility for research-driven storytelling and structured problem solving.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="closing">
+        <div class="inner">
+          <div>
+            <p class="section-kicker">Comprehensive Marketing Resume</p>
+            <h2>Built for broad MKT roles that need strategy, execution, creators, community, partners, data, and cultural fluency.</h2>
+          </div>
+          <div class="actions">
+            <a class="button primary" href="assets/Zhe-Chen-Integrated-Marketing-Resume.pdf" target="_blank" rel="noreferrer"><i data-lucide="download"></i>Download Resume</a>
+            <a class="button" href="mailto:summer.ikiki@gmail.com"><i data-lucide="send"></i>Contact</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="edit-toolbar" id="editToolbar" aria-live="polite">
+      <strong>Local edit mode</strong>
+      <span id="editStatus">Click page text to edit. Drafts stay in this browser.</span>
+      <span class="edit-spacer" aria-hidden="true"></span>
+      <button type="button" id="copyEditsButton">Copy changes</button>
+      <button type="button" id="clearEditsButton">Clear drafts</button>
+      <button type="button" id="exitEditButton">Exit edit mode</button>
+    </div>
+
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const requestedLanguage = urlParams.get("lang");
+      const requestedFocus = urlParams.get("focus");
+      const isLocalFile = window.location.protocol === "file:";
+      const editMode = urlParams.get("edit") === "1" || (isLocalFile && urlParams.get("edit") !== "0");
+      let activeLanguage = requestedLanguage === "zh" ? "zh" : localStorage.getItem("zheIntegratedMarketingLang") === "zh" ? "zh" : "en";
+      const activeFocus = requestedFocus === "creator-growth" ? "creator-growth" : "";
+      let currentFilter = activeFocus === "creator-growth" ? "creator" : "all";
+
+      const capabilityCopy = {
+        en: {
+          all: { kicker: "All capabilities", title: "An end-to-end growth leader across strategy, execution, and operating systems.", text: "Built repeatable growth systems across campaign strategy, creator networks, partnerships, live activations, community conversion, data optimization, content production, and AI-native product adoption." },
+          creator: { kicker: "Creator Growth", title: "Creator acquisition, activation, retention, and belonging.", text: "Creator growth work spans KOL/KOC networks, Xiaohongshu/RED-native content, campus and ambassador programs, offline creator experiences, community-led loops, creator education, and scalable playbooks." },
+          campaigns: { kicker: "Integrated Campaigns", title: "From insight to creative to conversion.", text: "Campaign work spans paid media, creators, community, offline activation, original video, PR/content, and post-campaign follow-up across AI/social, student-market, commerce, and entertainment contexts." },
+          gaming: { kicker: "Entertainment / Youth Culture", title: "Entertainment, fandom, and youth-culture community growth.", text: "Star Realms adds VR game/social community experience, while PEACHJAM, Wanda, Bilibili, and Tencent Video work show entertainment marketing, creator workflows, fandom dynamics, and audience-facing content judgment." },
+          influencer: { kicker: "Influencer / KOL", title: "Creator ecosystems, not one-off posts.", text: "Creator ecosystem includes 2,000+ influencer / KOL / KOC resources, RED/TikTok/Instagram/WeChat experience, creator briefs, social signals, and platform-native content growth." },
+          partnerships: { kicker: "Partnerships / BD", title: "Partnerships that convert into users, events, and channels.", text: "Partnership work covers 40+ vendors, 60+ student organizations, 200+ brand collaboration resources, broader partner-channel sign-ups, campus organizations, sponsors, and partner-led growth motions." },
+          community: { kicker: "Community Growth", title: "Community as acquisition, retention, and insight.", text: "Built communities across Discord, Telegram, WeChat, RED, TikTok, campus groups, customer groups, fan communities, and private traffic loops, with 100K+ reach and multiple conversion examples." },
+          events: { kicker: "Experiential Events", title: "Offline activations connected to online conversion.", text: "Event work includes 30+ offline activations, a 400-person yacht event, 60+ annual university events, campus screenings, vendor/venue coordination, KOL/media activation, and post-event conversion." },
+          data: { kicker: "Paid / Data", title: "Creative instincts backed by channel and funnel data.", text: "Data systems include 72K+ partner-channel funnel analysis, 32K+ match-pair analysis, 26.8% email verification rate, paid-media channels, Tableau dashboards, ROI tracking, UTM, and budget reviews." },
+          ai: { kicker: "AI / Product GTM", title: "Hands-on AI adoption and product marketing.", text: "AI product work includes the Coze-powered RED AI Agent, DPU product knowledge workflows, BrandYou AI education, SWAP product growth, AI-assisted film workflow modules, and product GTM materials." },
+          crossborder: { kicker: "North America + Global Platforms", title: "North America execution with global-platform fluency.", text: "Strength comes from North America campus/local market execution, global creator platforms, Mandarin-native communication, U.S. education, and Chinese-platform fluency as an added advantage." },
+        },
+        zh: {
+          all: { kicker: "全部能力", title: "能从战略、执行到系统沉淀完整负责增长的市场增长负责人。", text: "我的经历覆盖整合营销、创作者网络、商务合作、线下活动、社群转化、数据优化、内容生产和 AI Native 产品采用，重点不是单点执行，而是把增长动作做成可复用系统。" },
+          creator: { kicker: "创作者增长", title: "覆盖创作者获取、激活、留存和归属感建设。", text: "创作者增长经历覆盖 KOL/KOC 网络、小红书平台原生内容、校园与 ambassador 项目、线下创作者体验、社群增长闭环、创作者教育和可复制 playbook。" },
+          campaigns: { kicker: "整合营销", title: "从洞察、创意到转化的完整 campaign 能力。", text: "我做过付费投放、创作者内容、社群、线下激活、原创视频、PR/内容和后续转化闭环，覆盖 AI 社交、学生市场、本地商业和娱乐内容等场景。" },
+          gaming: { kicker: "娱乐 / 青年文化", title: "娱乐内容、粉丝社区和青年文化增长的可迁移经验。", text: "Star Realms 体现 VR 游戏/社交产品社区经验，PEACHJAM、Wanda、Bilibili 和腾讯视频相关经历体现娱乐营销、创作者工作流、粉丝社区和面向用户内容判断。" },
+          influencer: { kicker: "Influencer / KOL", title: "不是一次性投放，而是创作者生态。", text: "我沉淀过 2,000+ influencer / KOL / KOC 资源，并在小红书、TikTok、Instagram、微信等平台做过内容策划、达人合作和平台原生增长。" },
+          partnerships: { kicker: "商务合作 / BD", title: "能把合作伙伴转化为用户、活动和渠道。", text: "合作经验包括 40+ 供应商、60+ 学生组织、200+ 品牌合作资源、合作渠道注册、校园组织、赞助商和 partner-led growth 动作。" },
+          community: { kicker: "社群增长", title: "社群既是获客渠道，也是留存和市场反馈系统。", text: "我搭建过 Discord、Telegram、微信、小红书、TikTok、校园群、客户社群和私域转化链路，覆盖 100K+ 社群触达和多个转化案例。" },
+          events: { kicker: "线下活动", title: "线下激活要和线上转化闭环连接。", text: "我做过 30+ 线下活动、400 人游艇活动、60+ 年度高校活动、校园观影、场地/供应商协调、KOL/媒体激活和活动后的转化追踪。" },
+          data: { kicker: "付费 / 数据", title: "创意判断背后有渠道、漏斗和预算数据支撑。", text: "数据经验包括 72K+ 合作渠道用户漏斗分析、32K+ match pair 分析、26.8% 邮箱验证率、付费渠道、Tableau 看板、ROI、UTM 和预算复盘。" },
+          ai: { kicker: "AI / 产品 GTM", title: "真实参与 AI 产品采用和 AI 工作流落地。", text: "AI 相关经历包括小红书 Coze AI Agent、DPU 产品知识系统、BrandYou AI 教育内容、SWAP 产品增长、AI 辅助影视工作流模块和产品 GTM 材料。" },
+          crossborder: { kicker: "跨文化执行", title: "北美本地落地能力 + 全球平台理解。", text: "跨文化优势首先来自北美校园/本地市场执行、美国教育背景和全球创作者平台经验；中文母语和中文平台理解是额外加分，而不是市场边界。" },
+        },
+      };
+
+      const languageMeta = {
+        en: {
+          title: "Zhe Chen | Marketing, Growth & Partnerships",
+          description: "Zhe Chen's integrated marketing, growth, and partnerships resume site, covering community-led GTM, creator ecosystems, consumer growth, partnerships, events, entertainment and youth-culture communities, content, AI product GTM, North America execution, and cross-market expansion.",
+          activeCountAll: "Showing the full growth portfolio.",
+          sortAll: "Showing the full growth portfolio.",
+          activeCountPrefix: "Ranking ",
+          activeCountSuffix: " closely related experience cards first; supporting experience remains visible below.",
+          sortPrefix: "Ranked by relevance to ",
+          toggleAria: "Switch language",
+        },
+        zh: {
+          title: "陈喆 | 综合市场、增长与合作伙伴",
+          description: "陈喆的综合市场、增长与合作伙伴简历网站，展示社群驱动 GTM、创作者生态、消费产品增长、商务合作、线下活动、AI 产品 GTM、北美本地市场和跨市场拓展经验。",
+          activeCountAll: "展示完整增长经历。",
+          sortAll: "展示完整增长经历。",
+          activeCountPrefix: "已将 ",
+          activeCountSuffix: " 个高度相关经历排在前面，补充经历仍然保留在下方。",
+          sortPrefix: "当前按相关度排序：",
+          toggleAria: "切换语言",
+        },
+      };
+
+      const focusContent = {
+        "creator-growth": {
+          en: {
+            title: "Zhe Chen | Creator Growth & Community-Led Growth",
+            description: "Zhe Chen's creator growth resume site view, focused on creator acquisition, activation, retention, community-led growth, campus and ambassador programs, Xiaohongshu/RED-native content, and scalable creator ecosystem playbooks.",
+            text: {
+              ".eyebrow": "Creator Growth & Community-Led Growth",
+              ".hero h1": "Creator growth operator building creator ecosystems, community programs, and platform-native growth loops.",
+              ".lede": "I build creator acquisition, activation, and retention systems across Xiaohongshu/RED, KOL/KOC networks, campus communities, ambassador-style programs, offline creator experiences, and data-informed growth playbooks.",
+              ".hero-badges .pill:nth-child(1)": "Creator acquisition",
+              ".hero-badges .pill:nth-child(2)": "Community-led growth",
+              ".hero-badges .pill:nth-child(3)": "100M+ content views",
+              ".hero-badges .pill:nth-child(4)": "2K+ influencer resources",
+              ".hero-badges .pill:nth-child(5)": "2K+ KOL/KOC network",
+            },
+          },
+          zh: {
+            title: "陈喆 | 创作者增长与社群增长",
+            description: "陈喆的创作者增长投递视角，聚焦创作者获取、激活、留存、社群增长、校园和 ambassador 项目、小红书平台原生内容，以及可复制创作者生态 playbook。",
+            text: {
+              ".eyebrow": "创作者增长与社群增长",
+              ".hero h1": "搭建创作者生态、社群项目和平台原生增长闭环。",
+              ".lede": "我擅长围绕小红书/RED、KOL/KOC 网络、校园社群、ambassador 式项目、线下创作者体验和数据复盘，搭建创作者获取、激活、留存与可复制增长机制。",
+              ".hero-badges .pill:nth-child(1)": "创作者获取",
+              ".hero-badges .pill:nth-child(2)": "社群驱动增长",
+              ".hero-badges .pill:nth-child(3)": "1 亿+ 内容浏览",
+              ".hero-badges .pill:nth-child(4)": "2,000+ KOL/KOC 资源",
+              ".hero-badges .pill:nth-child(5)": "北美本地 + 全球平台",
+            },
+          },
+        },
+      };
+
+      const zhText = {
+        ".nav a[href='#outcomes']": "成果",
+        ".nav a[href='#capabilities']": "能力",
+        ".nav a[href='#cases']": "经历",
+        ".nav a[href='#system']": "系统",
+        ".nav a[href='#evidence']": "背书",
+        ".nav a[href='#contact']": "联系",
+        ".jump-rail a[href='#top'] .jump-label": "顶部",
+        ".jump-rail a[href='#outcomes'] .jump-label": "成果",
+        ".jump-rail a[href='#system'] .jump-label": "系统",
+        ".jump-rail a[href='#capabilities'] .jump-label": "能力",
+        ".jump-rail a[href='#cases'] .jump-label": "经历",
+        ".jump-rail a[href='#evidence'] .jump-label": "背书",
+        ".jump-rail a[href='#contact'] .jump-label": "联系",
+        ".header-actions .button": "简历 PDF",
+        ".eyebrow": "综合市场、增长与合作伙伴负责人",
+        ".hero h1": "围绕创作者、社群与合作伙伴搭建整合增长系统。",
+        ".lede": "我擅长把模糊增长目标拆成清晰的落地系统，覆盖创作者生态、战略合作伙伴、北美本地执行、全球创作者平台和跨市场拓展：定位、创作者/KOL 网络、校园/社群分发、线下激活、付费与数据闭环，以及跨文化团队协作。",
+        ".hero-badges .pill:nth-child(1)": "端到端增长负责人",
+        ".hero-badges .pill:nth-child(2)": "800% 用户增长",
+        ".hero-badges .pill:nth-child(3)": "1 亿+ 内容浏览",
+        ".hero-badges .pill:nth-child(4)": "2,000+ KOL/KOC 资源",
+        ".hero-badges .pill:nth-child(5)": "北美本地 + 跨市场 GTM",
+        ".proof-grid span:nth-child(1) em": "内容浏览",
+        ".proof-grid span:nth-child(2) em": "达人资源",
+        ".proof-grid span:nth-child(3) em": "用户增长",
+        ".proof-grid span:nth-child(4) em": "线下活动",
+        "#outcomes .section-kicker": "精选成果",
+        "#outcomes h2": "大规模、跨场景、可衡量的市场增长信号。",
+        "#outcomes .metric-card:nth-child(1) span": "全平台公开内容浏览量，覆盖社交、视频、影视媒体、创作者内容和公开传播项目。",
+        "#outcomes .metric-card:nth-child(2) strong": "100万+",
+        "#outcomes .metric-card:nth-child(2) span": "主导整合营销，通过创作者/社群内容、校园项目、合作伙伴和 campaign 执行，从 0 到 1 帮助品牌实现用户从 0 到 100 万+ 增长。",
+        "#outcomes .metric-card:nth-child(3) span": "通过合作伙伴驱动的协作、campaign follow-up 和校园/社群分发带来的更广义合作渠道注册。",
+        "#outcomes .metric-card:nth-child(4) span": "沉淀 2,000+ influencer / KOL / KOC 资源，支持创作者营销与 co-marketing。",
+        "#outcomes .metric-card:nth-child(5) span": "通过付费媒体、本地合作、校园渠道和 BD 执行，在一年内推动用户与收入增长。",
+        "#outcomes .metric-card:nth-child(6) span": "作为 Founder / 项目负责人获得互联网+ 国家级银奖等国家级创业大赛奖项，累计 5 项国家级创业奖项。",
+        "#capabilities .section-kicker": "交互式能力地图",
+        "#capabilities h2": "选择一个增长能力视角，下方经历会按相关度排序。",
+        "#capabilities .section-intro": "点击岗位最关心的能力点，下方经历卡片会立即重新排序，并高亮最相关的证据句。",
+        ".control-label": "选择能力点",
+        ".result-bridge span": "下方经历会即时更新：最相关经历排在前面。",
+        ".filter-button[data-filter='all']": "全部",
+        ".filter-button[data-filter='creator']": "创作者增长",
+        ".filter-button[data-filter='campaigns']": "整合营销",
+        ".filter-button[data-filter='gaming']": "娱乐 / 青年文化",
+        ".filter-button[data-filter='influencer']": "Influencer / KOL",
+        ".filter-button[data-filter='partnerships']": "合作 / BD",
+        ".filter-button[data-filter='community']": "社群增长",
+        ".filter-button[data-filter='events']": "线下活动",
+        ".filter-button[data-filter='data']": "付费 / 数据",
+        ".filter-button[data-filter='ai']": "AI / 产品 GTM",
+        ".filter-button[data-filter='crossborder']": "北美 + 跨文化",
+        "#cases .section-kicker": "排序后的经历证据",
+        "#cases h2": "真实经历会根据当前能力视角重新排列。",
+        ".case-tools span:nth-child(2)": "选中能力点后，相关经历会排到前面，匹配句子会高亮。",
+        ".case-card[data-index='1'] .card-kicker": "AI 消费产品增长",
+        ".case-card[data-index='1'] h3": "DITTO.AI：校园、创作者、合作伙伴和线下场景的综合增长",
+        ".case-card[data-index='1'] p": "AI Native dating / social 产品的市场总监与增长负责人，连接合作获客、创意线下激活、社群转化、产品数据和 AI 工作流采用。",
+        ".case-card[data-index='2'] .card-kicker": "北美本地增长",
+        ".case-card[data-index='2'] h3": "ENCMOBILE：付费媒体、本地合作、校园活动和收入增长",
+        ".case-card[data-index='2'] p": "增长营销与 BD 负责人，搭建面向学生市场的增长系统，覆盖付费获客、本地合作、校园社群、活动渠道和业绩复盘。",
+        ".case-card[data-index='3'] .card-kicker": "Founder 主导的市场体系",
+        ".case-card[data-index='3'] h3": "PANDAPAL：创作者生态、品牌资源和 AI 校园社区",
+        ".case-card[data-index='3'] p": "作为 Founder，搭建 global digital solutions provider / marketing agency 与 AI 校园社区产品，连接创作者、学生、品牌、社交内容和产品 GTM。",
+        ".case-card[data-index='4'] .card-kicker": "游戏相关社区",
+        ".case-card[data-index='4'] h3": "STAR REALMS：VR 游戏 / 元宇宙社区与上线规划",
+        ".case-card[data-index='4'] p": "VR social metaverse / game startup 的产品营销与社区负责人，搭建早期社区基础设施和上线材料。",
+        ".case-card[data-index='5'] .card-kicker": "娱乐内容 + AI 工作流",
+        ".case-card[data-index='5'] h3": "PEACHJAM / Legend Co-Shooting：AI + 影视资源共享平台",
+        ".case-card[data-index='5'] p": "AI 辅助影视/视频制作平台 Founder，直接接触创作者、制作资源、赞助合作、内容工作流和娱乐内容分发。",
+        ".case-card[data-index='6'] .card-kicker": "商业转化 + 校园市场",
+        ".case-card[data-index='6'] h3": "YAMI、HungryPanda、Wanda 与 4A agency：转化、活动和媒体策略",
+        ".case-card[data-index='6'] p": "早期市场经历覆盖电商转化、外卖平台校园 campaign、电影赞助、企业 PR / 媒体计划和影片发行营销。",
+        ".case-card[data-index='7'] .card-kicker": "AI Native + 创作者影响力",
+        ".case-card[data-index='7'] h3": "AI 工具、BrandYou、SWAP 和公开创作者信号",
+        ".case-card[data-index='7'] p": "这些公开项目体现 AI 采用、创作者信任、社交内容判断和平台原生增长能力。",
+        "#system .section-kicker:nth-of-type(1)": "端到端增长 ownership",
+        "#system .ownership-card:nth-child(1) h3": "从市场判断到落地系统。",
+        "#system .ownership-card:nth-child(1) p:not(.section-kicker)": "我能从市场判断一路负责到落地系统：定义定位，搭建 campaign 和合作伙伴动作，调动创作者、供应商和社群资源，推动跨团队上线，追踪 KPI 质量，并把早期有效动作沉淀成可复制 playbook。",
+        "#system .ownership-card:nth-child(2) .section-kicker": "我可以负责什么",
+        "#system .ownership-card:nth-child(2) h3": "从策略桌面到上线现场。",
+        "#system .ownership-card:nth-child(2) p:not(.section-kicker)": "北美 GTM、AI 消费产品增长、创作者/KOL 生态、校园/本地社群扩张、合作伙伴获客、线下活动、付费与数据复盘、跨文化团队协作和增长汇报。",
+        "#evidence .section-kicker": "补充背书",
+        "#evidence h2": "进一步支撑高级市场岗位可信度的公开信号。",
+        "#evidence .evidence-card:nth-child(1) h3": "国家级奖项与创业背书",
+        "#evidence .evidence-card:nth-child(1) p": "作为 Founder / 项目负责人获得互联网+ 国家级银奖（340 万+ 参赛项目）、挑战杯国家级铜奖等国家级创业大赛奖项，累计 5 项国家级创业奖项，并获得全国大学生社会实践竞赛第 2 名；同时获得全年级唯一创业特等奖学金与全校唯一北京市优秀创业团队负责人等 Founder 背书。",
+        "#evidence .evidence-card:nth-child(2) h3": "公开平台影响力",
+        "#evidence .evidence-card:nth-child(2) p": "知乎 1.5 万+ 粉丝与 3000 万+ 浏览；微博 1 万+ 粉丝、V 光计划与单条 600 万浏览；小红书首篇 100 万浏览；TikTok 40 万+ 点赞，并具备 Bilibili / 腾讯视频娱乐内容信号。",
+        "#evidence .evidence-card:nth-child(3) h3": "数据与投放工具",
+        "#evidence .evidence-card:nth-child(3) p": "Google Ads、Meta Ads、Amazon Ads、百度 SEO/SEM、GA4、PostHog、Tableau、Excel、UTM tracking、漏斗分析、ROI 复盘和预算 pacing。",
+        "#evidence .evidence-card:nth-child(4) h3": "北美本地与跨文化执行",
+        "#evidence .evidence-card:nth-child(4) p": "USC Annenberg Digital Social Media 硕士，具备美国本地校园/社群 leadership 经验；USC Student Success Fund recipient，USC Chinese Graduate Student Association PR Leader，USC Chinese Student Digital Community Founder，中文母语，英文专业工作能力。",
+        "#evidence .evidence-card:nth-child(5) h3": "科研与知识产权背书",
+        "#evidence .evidence-card:nth-child(5) p": "拥有 2 项国家专利，其中包括 1 项发明专利；发表 EI 检索论文，并参与《中国民俗文化精粹》相关内容，补充研究型表达和结构化问题解决能力。",
+        "#contact .section-kicker": "综合市场简历",
+        "#contact h2": "适合需要策略、执行、创作者、社群、合作伙伴、数据和跨文化能力的 MKT 岗位。",
+      };
+
+      const zhHtml = {
+        ".lede": "我擅长把模糊增长目标拆成清晰的落地系统，覆盖 <strong>创作者生态</strong>、战略合作伙伴、<strong>北美本地执行</strong>、全球创作者平台和跨市场拓展：定位、创作者/KOL 网络、校园/社群分发、线下激活、付费与数据闭环，以及跨文化团队协作。",
+        "#outcomes .metric-card:nth-child(1) span": "<strong>全平台公开内容浏览量</strong>，覆盖社交、视频、影视媒体、创作者内容和公开传播项目。",
+        "#outcomes .metric-card:nth-child(2) span": "主导 <strong>整合营销</strong>，通过创作者/社群内容、校园项目、合作伙伴和 campaign 执行，从 0 到 1 帮助品牌实现用户从 0 到 100 万+ 增长。",
+        "#outcomes .metric-card:nth-child(3) span": "通过合作伙伴驱动的协作、campaign follow-up 和校园/社群分发带来 <strong>合作渠道注册</strong>。",
+        "#outcomes .metric-card:nth-child(4) span": "沉淀 <strong>2,000+ influencer / KOL / KOC 资源</strong>，支持创作者营销与 co-marketing。",
+        "#outcomes .metric-card:nth-child(5) span": "通过付费媒体、本地合作、校园渠道和 BD 执行，在一年内推动 <strong>用户与收入增长</strong>。",
+        "#outcomes .metric-card:nth-child(6) span": "作为 Founder / 项目负责人获得互联网+ <strong>国家级银奖</strong> 等国家级创业大赛奖项，累计 <strong>5 项国家级创业奖项</strong>。",
+        ".contact-strip .contact-item:nth-child(1)": "<i data-lucide='map-pin'></i>洛杉矶, CA",
+        ".contact-strip .contact-item:nth-child(4)": "<i data-lucide='message-circle'></i>微信：chenzheCZZZ",
+        ".contact-strip .contact-item:nth-child(5)": "<i data-lucide='instagram'></i>Instagram：summer_ikiki",
+        ".actions .button.primary": "<i data-lucide='download'></i>下载简历",
+        ".hero .actions .button:nth-child(2)": "<i data-lucide='folder-open'></i>作品集",
+        "#contact .actions .button.primary": "<i data-lucide='download'></i>下载简历",
+        "#contact .actions .button:nth-child(2)": "<i data-lucide='send'></i>联系我",
+        "#system .ownership-card:nth-child(1) p:not(.section-kicker)": "我能从 <strong>市场判断</strong> 一路负责到落地系统：定义定位，搭建 <strong>campaign 和合作伙伴动作</strong>，调动创作者、供应商和社群资源，推动跨团队上线，追踪 KPI 质量，并把早期有效动作沉淀成可复制 playbook。",
+        "#system .ownership-card:nth-child(2) p:not(.section-kicker)": "<strong>北美 GTM</strong>、AI 消费产品增长、创作者/KOL 生态、校园/本地社群扩张、合作伙伴获客、线下活动、付费与数据复盘、跨文化团队协作和增长汇报。",
+        ".case-card[data-index='1'] li:nth-child(1)": "通过校园激活、创作者/influencer 营销、原创视频、field marketing、社群渠道和合作伙伴分发，推动 <strong>800% 用户增长</strong>，累计用户达到 <strong>150K+</strong>。",
+        ".case-card[data-index='1'] li:nth-child(2)": "搭建校园病毒式增长矩阵，组合创意海报、爆款线下/游艇活动、influencer marketing、原创短视频、ambassador/社群渠道和转化 follow-up。",
+        ".case-card[data-index='1'] li:nth-child(3)": "负责一次重要 partner-led campus campaign 的增长执行，带来 <strong>73K+ 注册</strong>、<strong>32K+ matches</strong>，覆盖 <strong>733 所美国大学</strong>；更广义合作渠道带来 <strong>100K+ sign-ups</strong>。",
+        ".case-card[data-index='1'] li:nth-child(4)": "分析 <strong>72K+ 合作渠道用户</strong> 和 <strong>32K+ match pairs</strong> 的漏斗与匹配行为，识别 dormant segments 和 <strong>48 小时 engagement window</strong>，优化 re-engagement strategy 与 campaign follow-up。",
+        ".case-card[data-index='1'] li:nth-child(5)": "识别出一个高转化目标社群渠道，达到 <strong>26.8% 邮箱验证率</strong>，约为平台平均水平的 <strong>20x</strong>，并将洞察转化为获客建议。",
+        ".case-card[data-index='1'] li:nth-child(6)": "搭建 DPU，一个 <strong>AI-powered product knowledge base</strong>，沉淀产品 specs、运营上下文、campaign learnings 和可复用上线材料。",
+        ".case-card[data-index='2'] li:nth-child(1)": "通过 Google Ads、Meta Ads、Amazon Ads、百度 SEO/SEM、校园渠道、本地合作和学生/社群激活，在一年内实现 <strong>8x 用户增长</strong> 和 <strong>10x 收入增长</strong>。",
+        ".case-card[data-index='2'] li:nth-child(2)": "建立覆盖 <strong>70+ 美国大学</strong> 的学生组织和校园社群关系，包括 Harvard、Stanford、Cornell、Yale、UCLA 和 USC。",
+        ".case-card[data-index='2'] li:nth-child(3)": "谈判并维护 <strong>40+ 供应商</strong> 和 <strong>60+ 学生组织</strong>合作，支持 partner evaluation、campaign launch、optimization 和长期关系维护。",
+        ".case-card[data-index='2'] li:nth-child(4)": "每年协调 <strong>60+ 北美高校活动</strong>，沉淀场地、供应商、媒体伙伴、校园组织和 ambassador 资源。",
+        ".case-card[data-index='2'] li:nth-child(5)": "主导整合营销和商务合作，从 0 到 1 帮助品牌在任期内突破 <strong>100 万+ 用户</strong>。",
+        ".case-card[data-index='2'] li:nth-child(6)": "建立 Tableau KPI 和预算复盘机制，将合作成本降低 <strong>50%</strong>，提升渠道 pacing 和预算判断。",
+        ".case-card[data-index='2'] li:nth-child(7)": "管理 <strong>百万美金级预算</strong> 和 <strong>50+ 人执行网络</strong>，并因业务影响和执行表现获得 <strong>Best Sales Champion (2024)</strong>。",
+        ".case-card[data-index='3'] li:nth-child(1)": "从 0 到 1 搭建社群系统，实现 <strong>100K+ 社群触达</strong>、<strong>80K+ 校园网络</strong>、50+ 活跃群，并运营 Discord / 微信 / Telegram / 小红书 / TikTok 等多平台阵地。",
+        ".case-card[data-index='3'] li:nth-child(2)": "沉淀 <strong>2,000+ influencer / KOL / KOC 资源</strong> 和 <strong>200+ 品牌合作资源</strong>，支持创作者营销、co-marketing 和 Founder 主导的商务沟通。",
+        ".case-card[data-index='3'] li:nth-child(3)": "同时搭建青年社群品牌和 marketing / digital solutions business，为 <strong>200+ 品牌与合作伙伴</strong>提供创作者/社群、内容、活动和 campaign 方案，并验证 <strong>3 种商业化模型</strong>。",
+        ".case-card[data-index='3'] li:nth-child(4)": "策划 <strong>20+ digital campaigns</strong>，触达 600K+ 用户，并组织 30+ 校园/社群活动支持合作方 campaign 和学生市场分发。",
+        ".case-card[data-index='3'] li:nth-child(5)": "将小红书账号从 0 做到 <strong>7K+ 粉丝</strong>；首篇笔记获得 <strong>1M 浏览</strong>，并转化 1,000 名目标用户进入私域。",
+        ".case-card[data-index='3'] li:nth-child(6)": "基于 500+ 调研反馈，设计 AI/GIS/GPS-enabled campus lifestyle product 的 PRD、BP、prototype 和获客渠道验证。",
+        ".case-card[data-index='4'] li:nth-child(1)": "搭建并运营 <strong>50K+ 跨平台社区</strong>，覆盖 Discord、微信、Telegram、TikTok、LinkedIn、X、小红书和知乎。",
+        ".case-card[data-index='4'] li:nth-child(2)": "搭建以 Discord 为中心的社区运营基础设施，包括 server structure、roles/permissions、bots、engagement loops、conversion paths、moderation 和 retention feedback。",
+        ".case-card[data-index='4'] li:nth-child(3)": "建立 <strong>0-to-1 VR game/social product launch infrastructure</strong>，并通过大学合作、种子用户反馈、产品教育内容和 10+ 产品/市场策略 deck 支持 <strong>$400K 融资</strong>。",
+        ".case-card[data-index='5'] li:nth-child(1)": "创立 AI 辅助影视制作平台，支持创作者协作、影视资源匹配和 workflow automation；项目获得互联网+国家级银奖、挑战杯国家级铜奖等国家级创业奖项。",
+        ".case-card[data-index='5'] li:nth-child(2)": "搭建 <strong>3,000+ 专业创作者社群</strong>，聚合 <strong>6,000+ 影视制作资源</strong>。",
+        ".case-card[data-index='5'] li:nth-child(3)": "设计 AI 辅助影视工作流模块，覆盖 script/storyboard import、scene breakdown、shot lists、shooting schedules、props lists、camera movement guidance、editing templates 和 auto-subtitles。",
+        ".case-card[data-index='5'] li:nth-child(4)": "制作并分发影视作品 <em>Mount & Sea</em>，首周获得 <strong>1.114M Bilibili views</strong> 和 105K likes；参与腾讯视频综艺内容脚本，累计播放 <strong>27.5M+</strong>。",
+        ".case-card[data-index='5'] li:nth-child(5)": "支持 Pacific Creative Park 的 BD 与运营，覆盖 <strong>28,000 sqm</strong> 创意园区，完成 <strong>20+ 商户合作</strong>，支持 <strong>100% 入驻率</strong>，带来约 <strong>RMB 500K</strong> 年增量收入。",
+        ".case-card[data-index='6'] li:nth-child(1)": "在 YAMI 搭建 10+ 客户社群、2,000+ 成员，实现 <strong>22% 转化率</strong>、<strong>60% 复购率</strong>、<strong>1M+ campaign reach</strong>、<strong>25% ROI 提升</strong> 和 <strong>$50K 直接订单转化</strong>，并获得 Sales Champion。",
+        ".case-card[data-index='6'] li:nth-child(2)": "在 HungryPanda 产出 <strong>10+ 小红书爆款内容</strong> 和 <strong>6 篇高表现微信文章</strong>，策划 <strong>20+ 校园 campaign</strong>，新增 <strong>1,500+ 用户</strong>，并搭建 8 个活跃社群。",
+        ".case-card[data-index='6'] li:nth-child(3)": "在 Wanda Wuzhou Film Distribution 主导 <strong>10+ 校园观影</strong>，覆盖 <strong>1,200+ 观众</strong>，约 <strong>70% 社群加入率</strong>，复购/复参与提升 50%，并落地 <strong>5 个品牌赞助</strong>。",
+        ".case-card[data-index='6'] li:nth-child(4)": "在 Skywalker Communications 参与 Weichai Power 和 Sinotruk 的企业 PR、品牌与媒体策略，包括 <strong>CCTV media-plan evaluation</strong>、campaign pacing、KPI alignment 和 post-campaign reviews；exposure / share-of-voice 提升约 <strong>30%</strong>。",
+        ".case-card[data-index='6'] li:nth-child(5)": "在 Beijing Hengdian Film Group 交付 3 套 release / marketing plans，通过受众调研、focus groups、trailers 和 key-art refinement 将 creative asset consistency 提升约 <strong>20%</strong>。",
+        ".case-card[data-index='6'] li:nth-child(6)": "在 Sohu Media 负责 Sofa Video 校园推广，并获得 <strong>Best Intern</strong>，为 <strong>当批实习生绩效第一</strong>。",
+        ".case-card[data-index='7'] li:nth-child(1)": "独立创作并上线小红书爆款文案 AI Agent，登上小红书文案工具榜 <strong>#1</strong>，累计 <strong>12,400+ 用户</strong>。",
+        ".case-card[data-index='7'] li:nth-child(2)": "联合创立 BrandYou，并发布 Claude Code 教程文章，获得 <strong>100K+ 微信公众号阅读</strong>、<strong>11K+ 转发</strong>、2,467 点赞和 1,092 收藏/喜欢。",
+        ".case-card[data-index='7'] li:nth-child(3)": "作为 SWAP Co-Founder & Marketing Partner，通过产品定位、小红书增长、线下激活和用户教育，为技能交换社交产品带来 <strong>100K+ 用户</strong>。",
+        ".case-card[data-index='7'] li:nth-child(4)": "公开创作者信号包括 <strong>30M+ 知乎浏览</strong>、<strong>600 万浏览微博单帖</strong>、<strong>100 万浏览小红书首篇笔记</strong>，以及 MoreThanHugs 的 <strong>40 万+ TikTok 点赞</strong>。",
+      };
+
+      const zhAttrs = [
+        ["meta[name='description']", "content", languageMeta.zh.description],
+        ["#languageToggle", "aria-label", languageMeta.zh.toggleAria],
+        [".jump-rail a[href='#top']", "aria-label", "顶部"],
+        [".jump-rail a[href='#top']", "title", "顶部"],
+        [".jump-rail a[href='#outcomes']", "aria-label", "成果"],
+        [".jump-rail a[href='#outcomes']", "title", "成果"],
+        [".jump-rail a[href='#capabilities']", "aria-label", "能力选择"],
+        [".jump-rail a[href='#capabilities']", "title", "能力"],
+        [".jump-rail a[href='#cases']", "aria-label", "经历"],
+        [".jump-rail a[href='#cases']", "title", "经历"],
+        [".jump-rail a[href='#system']", "aria-label", "工作系统"],
+        [".jump-rail a[href='#system']", "title", "系统"],
+        [".jump-rail a[href='#evidence']", "aria-label", "背书"],
+        [".jump-rail a[href='#evidence']", "title", "背书"],
+        [".jump-rail a[href='#contact']", "aria-label", "联系"],
+        [".jump-rail a[href='#contact']", "title", "联系"],
+      ];
+
+      const buttons = [...document.querySelectorAll(".filter-button")];
+      const cards = [...document.querySelectorAll(".case-card")];
+      const bullets = [...document.querySelectorAll(".case-card li")];
+      const activeKicker = document.querySelector("#activeKicker");
+      const activeTitle = document.querySelector("#activeTitle");
+      const activeText = document.querySelector("#activeText");
+      const activeCount = document.querySelector("#activeCount");
+      const caseGrid = document.querySelector("#caseGrid");
+      const sortNote = document.querySelector("#sortNote");
+      const languageToggle = document.querySelector("#languageToggle");
+      const railLinks = [...document.querySelectorAll(".jump-rail a")];
+      const originalText = new Map();
+      const originalHtml = new Map();
+      const originalAttrs = new Map();
+      const filterSortWeights = {
+        creator: { 3: 80, 1: 72, 7: 68, 2: 54, 4: 40, 5: 32, 6: 12 },
+      };
+      const editStorageKey = "zheIntegratedMarketingDraftEdits.v1";
+      const editStatus = document.querySelector("#editStatus");
+      const copyEditsButton = document.querySelector("#copyEditsButton");
+      const clearEditsButton = document.querySelector("#clearEditsButton");
+      const exitEditButton = document.querySelector("#exitEditButton");
+      const editableSelectors = [
+        ".jump-label",
+        ".eyebrow",
+        ".hero h1",
+        ".lede",
+        ".hero-badges .pill",
+        ".proof-grid strong",
+        ".proof-grid em",
+        "#outcomes .section-kicker",
+        "#outcomes h2",
+        "#outcomes .metric-card strong",
+        "#outcomes .metric-card span",
+        "#system .section-kicker",
+        "#system h3",
+        "#system .ownership-card p:not(.section-kicker)",
+        "#system .ops-flow span",
+        "#capabilities .section-kicker",
+        "#capabilities h2",
+        "#capabilities .section-intro",
+        ".control-label",
+        ".result-bridge span",
+        "#cases .section-kicker",
+        "#cases h2",
+        ".case-tools span",
+        ".case-card .card-kicker",
+        ".case-card h3",
+        ".case-card p",
+        ".case-card li",
+        ".case-card .tag",
+        "#evidence .section-kicker",
+        "#evidence h2",
+        ".evidence-card h3",
+        ".evidence-card p",
+        "#contact .section-kicker",
+        "#contact h2",
+      ];
+      let draftEdits = loadDraftEdits();
+
+      function loadDraftEdits() {
+        try {
+          return JSON.parse(localStorage.getItem(editStorageKey) || "{}");
+        } catch {
+          return {};
+        }
+      }
+
+      function persistDraftEdits() {
+        localStorage.setItem(editStorageKey, JSON.stringify(draftEdits));
+      }
+
+      function plainTextFromHtml(html) {
+        const template = document.createElement("template");
+        template.innerHTML = html;
+        return (template.content.textContent || "").replace(/\s+/g, " ").trim();
+      }
+
+      function draftEntryCount() {
+        return Object.keys(draftEdits).length;
+      }
+
+      function setEditStatus(message) {
+        if (!editStatus) return;
+        const count = draftEntryCount();
+        editStatus.textContent = message || `${count} local draft edit${count === 1 ? "" : "s"} saved in this browser.`;
+      }
+
+      function editKeyFor(selector, index) {
+        return `${activeLanguage}::${selector}::${index}`;
+      }
+
+      function saveEditableElement(event) {
+        const el = event.currentTarget;
+        if (!el.dataset.editKey) return;
+        draftEdits[`${activeLanguage}::${el.dataset.editKey}`] = el.innerHTML.trim();
+        el.dataset.editDirty = "true";
+        persistDraftEdits();
+        setEditStatus("Saved locally. Copy changes when you want me to sync them.");
+      }
+
+      function preventEditableLinkNavigation(event) {
+        event.preventDefault();
+      }
+
+      function setupEditableTargets() {
+        if (!editMode) return;
+        document.documentElement.dataset.editMode = "true";
+        editableSelectors.forEach((selector) => {
+          document.querySelectorAll(selector).forEach((el, index) => {
+            const key = `${selector}::${index}`;
+            const stored = draftEdits[editKeyFor(selector, index)];
+            el.dataset.editKey = key;
+            el.setAttribute("contenteditable", "true");
+            el.setAttribute("spellcheck", "true");
+            el.setAttribute("aria-label", "Editable local draft text");
+            el.removeEventListener("input", saveEditableElement);
+            el.addEventListener("input", saveEditableElement);
+            if (el.classList.contains("jump-label")) {
+              el.removeEventListener("click", preventEditableLinkNavigation);
+              el.addEventListener("click", preventEditableLinkNavigation);
+            }
+            if (stored !== undefined) {
+              el.innerHTML = stored;
+              el.dataset.editDirty = "true";
+            } else {
+              delete el.dataset.editDirty;
+            }
+          });
+        });
+        setEditStatus();
+      }
+
+      function copyDraftEdits() {
+        const entries = Object.entries(draftEdits).map(([key, html]) => {
+          const [language, selector, index] = key.split("::");
+          return {
+            language,
+            selector,
+            index: Number(index),
+            text: plainTextFromHtml(html),
+            html,
+          };
+        });
+        const payload = [
+          "Local text edits from integrated-marketing/index.html",
+          "Paste this back to Codex so the edits can be applied to source files, PDFs, and role-specific pages.",
+          "",
+          JSON.stringify(entries, null, 2),
+        ].join("\n");
+        const fallbackCopy = () => {
+          const textarea = document.createElement("textarea");
+          textarea.value = payload;
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand("copy");
+          textarea.remove();
+        };
+        Promise.resolve()
+          .then(() => navigator.clipboard?.writeText ? navigator.clipboard.writeText(payload) : fallbackCopy())
+          .then(() => setEditStatus("Copied local edits. Paste them to me when ready."))
+          .catch(() => {
+            fallbackCopy();
+            setEditStatus("Copied local edits. Paste them to me when ready.");
+          });
+      }
+
+      function clearDraftEdits() {
+        if (!window.confirm("Clear all local draft edits for this page?")) return;
+        draftEdits = {};
+        localStorage.removeItem(editStorageKey);
+        window.location.reload();
+      }
+
+      function exitEditMode() {
+        const nextUrl = new URL(window.location.href);
+        if (isLocalFile) {
+          nextUrl.searchParams.set("edit", "0");
+        } else {
+          nextUrl.searchParams.delete("edit");
+        }
+        window.location.href = nextUrl.toString();
+      }
+
+      function initEditMode() {
+        if (!editMode) return;
+        setupEditableTargets();
+        copyEditsButton?.addEventListener("click", copyDraftEdits);
+        clearEditsButton?.addEventListener("click", clearDraftEdits);
+        exitEditButton?.addEventListener("click", exitEditMode);
+      }
+
+      function cacheOriginals() {
+        Object.keys(zhText).forEach((selector) => {
+          const el = document.querySelector(selector);
+          if (el && !originalText.has(selector)) originalText.set(selector, el.textContent);
+        });
+        Object.keys(zhHtml).forEach((selector) => {
+          const el = document.querySelector(selector);
+          if (el && !originalHtml.has(selector)) originalHtml.set(selector, el.innerHTML);
+        });
+        zhAttrs.forEach(([selector, attr]) => {
+          const key = selector + "::" + attr;
+          const el = document.querySelector(selector);
+          if (el && !originalAttrs.has(key)) originalAttrs.set(key, el.getAttribute(attr) || "");
+        });
+      }
+
+      function setLanguage(lang) {
+        activeLanguage = lang === "zh" ? "zh" : "en";
+        localStorage.setItem("zheIntegratedMarketingLang", activeLanguage);
+        document.documentElement.lang = activeLanguage === "zh" ? "zh-CN" : "en";
+        document.documentElement.dataset.lang = activeLanguage;
+        document.title = languageMeta[activeLanguage].title;
+        const meta = document.querySelector("meta[name='description']");
+        if (meta) meta.setAttribute("content", languageMeta[activeLanguage].description);
+        if (languageToggle) {
+          languageToggle.textContent = "EN / 中文";
+          languageToggle.setAttribute("aria-label", languageMeta[activeLanguage].toggleAria);
+          languageToggle.setAttribute("aria-pressed", String(activeLanguage === "zh"));
+        }
+
+        Object.keys(zhText).forEach((selector) => {
+          const el = document.querySelector(selector);
+          if (!el) return;
+          el.textContent = activeLanguage === "zh" ? zhText[selector] : originalText.get(selector);
+        });
+        Object.keys(zhHtml).forEach((selector) => {
+          const el = document.querySelector(selector);
+          if (!el) return;
+          el.innerHTML = activeLanguage === "zh" ? zhHtml[selector] : originalHtml.get(selector);
+        });
+        zhAttrs.forEach(([selector, attr, zhValue]) => {
+          const el = document.querySelector(selector);
+          if (!el) return;
+          const key = selector + "::" + attr;
+          el.setAttribute(attr, activeLanguage === "zh" ? zhValue : originalAttrs.get(key));
+        });
+
+        applyFocusContent();
+        setFilter(currentFilter);
+        if (window.lucide) window.lucide.createIcons();
+        setupEditableTargets();
+      }
+
+      function applyFocusContent() {
+        const config = focusContent[activeFocus]?.[activeLanguage];
+        if (!config) return;
+        document.title = config.title;
+        const meta = document.querySelector("meta[name='description']");
+        if (meta) meta.setAttribute("content", config.description);
+        Object.entries(config.text).forEach(([selector, value]) => {
+          const el = document.querySelector(selector);
+          if (el) el.textContent = value;
+        });
+      }
+
+      function scoreCard(card, filter) {
+        if (filter === "all") return Number(card.dataset.index) * -0.01;
+        const cardTags = card.dataset.tags.split(" ");
+        const bulletMatches = [...card.querySelectorAll("li")].filter((li) => li.dataset.tags.split(" ").includes(filter)).length;
+        const sortWeight = filterSortWeights[filter]?.[card.dataset.index] || 0;
+        return sortWeight + (cardTags.includes(filter) ? 10 : 0) + bulletMatches;
+      }
+
+      function setFilter(filter) {
+        currentFilter = filter;
+        buttons.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.filter === filter)));
+        const copySet = capabilityCopy[activeLanguage] || capabilityCopy.en;
+        const copy = copySet[filter] || copySet.all;
+        activeKicker.textContent = copy.kicker;
+        activeTitle.textContent = copy.title;
+        activeText.textContent = copy.text;
+
+        let matched = 0;
+        cards
+          .slice()
+          .sort((a, b) => scoreCard(b, filter) - scoreCard(a, filter))
+          .forEach((card) => {
+            const isMatch = filter === "all" || scoreCard(card, filter) > 0;
+            if (isMatch && filter !== "all") matched += 1;
+            card.classList.toggle("is-match", isMatch && filter !== "all");
+            card.classList.toggle("is-supporting", !isMatch && filter !== "all");
+            caseGrid.appendChild(card);
+          });
+
+        bullets.forEach((li) => {
+          const match = filter !== "all" && li.dataset.tags.split(" ").includes(filter);
+          li.classList.toggle("is-highlight", match);
+        });
+
+        const labels = languageMeta[activeLanguage];
+        activeCount.textContent = filter === "all" ? labels.activeCountAll : labels.activeCountPrefix + matched + labels.activeCountSuffix;
+        sortNote.textContent = filter === "all" ? labels.sortAll : labels.sortPrefix + copy.kicker + ".";
+      }
+
+      function updateRail() {
+        const ids = ["top", "outcomes", "system", "capabilities", "cases", "evidence", "contact"];
+        let activeId = "top";
+        ids.forEach((id) => {
+          const el = document.getElementById(id);
+          if (!el) return;
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 130) activeId = id;
+        });
+        railLinks.forEach((link) => link.classList.toggle("is-active", link.getAttribute("href") === "#" + activeId));
+      }
+
+      buttons.forEach((button) => button.addEventListener("click", () => setFilter(button.dataset.filter)));
+      if (languageToggle) languageToggle.addEventListener("click", () => setLanguage(activeLanguage === "zh" ? "en" : "zh"));
+      window.addEventListener("scroll", updateRail, { passive: true });
+      window.addEventListener("resize", updateRail);
+
+      cacheOriginals();
+      setLanguage(activeLanguage);
+      initEditMode();
+      updateRail();
+    </script>
+  </body>
+</html>
