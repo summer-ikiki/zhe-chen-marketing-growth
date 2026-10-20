@@ -156,27 +156,36 @@
 
       .jump-rail {
         position: fixed;
-        right: 18px;
+        right: 14px;
         top: 50%;
         z-index: 40;
         display: flex;
         flex-direction: column;
-        gap: 8px;
-        padding: 10px;
+        gap: 6px;
+        padding: 8px;
         border: 1px solid rgba(217, 227, 225, 0.9);
         border-radius: 999px;
-        background: rgba(255, 255, 255, 0.86);
-        box-shadow: 0 16px 38px rgba(20, 35, 41, 0.1);
+        background: rgba(255, 255, 255, 0.72);
+        box-shadow: 0 14px 32px rgba(20, 35, 41, 0.08);
         backdrop-filter: blur(14px);
+        opacity: 0.72;
         transform: translateY(-50%);
+        transition: opacity 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+      }
+
+      .jump-rail:hover,
+      .jump-rail:focus-within {
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 16px 38px rgba(20, 35, 41, 0.12);
+        opacity: 1;
       }
 
       .jump-rail a {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 34px;
-        height: 34px;
+        width: 32px;
+        height: 32px;
         border: 1px solid transparent;
         border-radius: 999px;
         color: var(--muted);
@@ -201,23 +210,21 @@
       }
 
       html[data-edit-mode="true"] .jump-rail {
-        align-items: stretch;
-        border-radius: 18px;
-        padding: 10px;
+        align-items: center;
+        border-radius: 999px;
+        padding: 8px;
       }
 
       html[data-edit-mode="true"] .jump-rail a {
-        justify-content: flex-start;
-        gap: 8px;
-        width: auto;
-        min-width: 116px;
-        padding: 0 10px;
+        justify-content: center;
+        gap: 0;
+        width: 32px;
+        min-width: 0;
+        padding: 0;
       }
 
       html[data-edit-mode="true"] .jump-label {
-        display: inline;
-        font: 900 12px var(--sans);
-        white-space: nowrap;
+        display: none;
       }
 
       main {
@@ -270,9 +277,9 @@
       }
 
       h1 {
-        max-width: 900px;
-        font-size: clamp(44px, 5.4vw, 78px);
-        line-height: 1.02;
+        max-width: 940px;
+        font-size: clamp(42px, 4.75vw, 64px);
+        line-height: 1;
       }
 
       html[lang="zh"] h1 {
@@ -303,10 +310,10 @@
       .lede,
       .section-intro {
         max-width: 760px;
-        margin-top: 24px;
+        margin-top: 22px;
         color: #32454d;
-        font-size: clamp(18px, 2.2vw, 26px);
-        line-height: 1.24;
+        font-size: clamp(18px, 2vw, 23px);
+        line-height: 1.28;
         font-weight: 700;
       }
 
@@ -788,35 +795,69 @@
 
       .edit-toolbar {
         position: fixed;
-        left: 50%;
+        right: 18px;
         bottom: 18px;
         z-index: 90;
         display: none;
-        align-items: center;
-        gap: 10px;
-        width: min(calc(100vw - 28px), 820px);
-        padding: 12px;
-        border: 1px solid rgba(8, 112, 111, 0.22);
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.94);
-        box-shadow: 0 20px 48px rgba(20, 35, 41, 0.16);
-        backdrop-filter: blur(16px);
-        transform: translateX(-50%);
+        width: min(340px, calc(100vw - 28px));
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
       }
 
-      .edit-toolbar strong,
-      .edit-toolbar span {
+      .edit-toggle-button,
+      .edit-toolbar-panel {
+        border: 1px solid rgba(8, 112, 111, 0.22);
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 18px 42px rgba(20, 35, 41, 0.16);
+        backdrop-filter: blur(16px);
+      }
+
+      .edit-toggle-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        min-height: 42px;
+        padding: 0 14px;
+        border-radius: 999px;
+        color: var(--teal);
+        cursor: pointer;
+        font: 900 12px var(--sans);
+      }
+
+      .edit-toggle-button em {
+        color: var(--muted);
+        font-style: normal;
+        font-weight: 800;
+      }
+
+      .edit-toolbar-panel {
+        display: none;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        padding: 12px;
+        border-radius: 10px;
+      }
+
+      .edit-toolbar.is-open .edit-toolbar-panel {
+        display: flex;
+      }
+
+      .edit-toolbar-panel strong,
+      .edit-toolbar-panel span {
         font-size: 13px;
         line-height: 1.2;
       }
 
-      .edit-toolbar strong {
+      .edit-toolbar-panel strong {
         color: var(--teal);
         font-weight: 900;
         white-space: nowrap;
       }
 
-      .edit-toolbar span {
+      .edit-toolbar-panel span {
         color: var(--muted);
         font-weight: 700;
       }
@@ -844,15 +885,31 @@
         outline: none;
       }
 
+      .edit-toolbar .edit-toggle-button {
+        min-height: 42px;
+        padding: 0 14px;
+        border-radius: 999px;
+        color: var(--teal);
+      }
+
+      .edit-toolbar .edit-toggle-button:hover,
+      .edit-toolbar .edit-toggle-button:focus-visible {
+        background: #fff;
+      }
+
       html[data-edit-mode="true"] .edit-toolbar {
         display: flex;
       }
 
       html[data-edit-mode="true"] [contenteditable="true"] {
         border-radius: 5px;
-        outline: 1px dashed rgba(8, 112, 111, 0.28);
+        outline: 1px dashed rgba(8, 112, 111, 0.12);
         outline-offset: 3px;
         cursor: text;
+      }
+
+      html[data-edit-mode="true"] [contenteditable="true"]:hover {
+        outline-color: rgba(8, 112, 111, 0.32);
       }
 
       html[data-edit-mode="true"] [contenteditable="true"]:focus {
@@ -1052,12 +1109,9 @@
         }
 
         .edit-toolbar {
-          left: 14px;
           right: 14px;
           bottom: 12px;
-          flex-wrap: wrap;
           width: auto;
-          transform: none;
         }
 
         .edit-toolbar .edit-spacer {
@@ -1123,7 +1177,7 @@
             <p class="eyebrow">Integrated Marketing, Growth & Partnerships Leader</p>
             <h1>Integrated Growth Systems Across Creators, Communities & Partnerships.</h1>
             <p class="lede">
-              I turn ambiguous growth goals into launch systems across <strong>creator ecosystems</strong>, strategic partnerships, <strong>North America</strong> execution, global creator platforms, and cross-market expansion: positioning, creator/KOL networks, campus/community distribution, field activations, and paid/data loops.
+              I turn ambiguous growth goals into launch systems across <strong>creator ecosystems</strong>, <strong>strategic partnerships</strong>, <strong>North America</strong> execution, global creator platforms, and <strong>cross-market expansion</strong>: positioning, creator/KOL networks, campus/community distribution, field activations, and <strong>paid/data loops</strong>.
             </p>
             <div class="hero-badges">
               <span class="pill">End-to-end growth owner</span>
@@ -1132,17 +1186,17 @@
               <span class="pill">2K+ influencer resources</span>
               <span class="pill">North America + global GTM</span>
             </div>
+            <div class="actions">
+              <a class="button primary" href="assets/Zhe-Chen-Integrated-Marketing-Resume.pdf" target="_blank" rel="noreferrer"><i data-lucide="download"></i>Download Resume</a>
+              <a class="button" href="https://summer-ikiki.github.io/zhe-chen-portfolio/" target="_blank" rel="noreferrer"><i data-lucide="folder-open"></i>Portfolio</a>
+              <a class="button" href="https://www.linkedin.com/in/chen-zhe/" target="_blank" rel="noreferrer"><i data-lucide="external-link"></i>LinkedIn</a>
+            </div>
             <div class="contact-strip">
               <span class="contact-item"><i data-lucide="map-pin"></i>Los Angeles, CA</span>
               <a class="contact-item" href="mailto:summer.ikiki@gmail.com"><i data-lucide="mail"></i>summer.ikiki@gmail.com</a>
               <a class="contact-item" href="tel:+14242848889"><i data-lucide="phone"></i>(1) 424-284-8889</a>
               <span class="contact-item"><i data-lucide="message-circle"></i>WeChat: chenzheCZZZ</span>
               <span class="contact-item"><i data-lucide="instagram"></i>Instagram: summer_ikiki</span>
-            </div>
-            <div class="actions">
-              <a class="button primary" href="assets/Zhe-Chen-Integrated-Marketing-Resume.pdf" target="_blank" rel="noreferrer"><i data-lucide="download"></i>Download Resume</a>
-              <a class="button" href="https://summer-ikiki.github.io/zhe-chen-portfolio/" target="_blank" rel="noreferrer"><i data-lucide="folder-open"></i>Portfolio</a>
-              <a class="button" href="https://www.linkedin.com/in/chen-zhe/" target="_blank" rel="noreferrer"><i data-lucide="external-link"></i>LinkedIn</a>
             </div>
           </div>
           <figure class="hero-visual">
@@ -1259,6 +1313,21 @@
             </div>
           </div>
           <div class="case-grid" id="caseGrid">
+            <article class="case-card" data-tags="creator campaigns influencer partnerships community events data ai crossborder" data-index="0">
+              <div class="card-kicker">Global AI GTM</div>
+              <h3>TEAMILY AI: global GTM, creator growth, and integrated product launches</h3>
+              <p>Marketing Director &amp; GTM Lead for an AI-native platform where humans and AI agents collaborate through shared context, memory, and workflows.</p>
+              <ul>
+                <li data-tags="campaigns data ai crossborder">Drove <strong>10x website traffic growth within the first month</strong>, helping make Teamily the <strong>world&apos;s fastest-growing early-stage AI product by monthly traffic growth</strong>.</li>
+                <li data-tags="campaigns ai crossborder">Lead global marketing, growth, and GTM strategy with the founding team, shaping positioning, messaging, target audiences, product launches, user education, integrated campaigns, and market-facing communications.</li>
+                <li data-tags="creator campaigns influencer community data">Orchestrated an integrated global product launch generating <strong>10M+ cross-platform impressions</strong>, <strong>5,000+ related content pieces</strong>, and a <strong>#1 trend in X&apos;s Business &amp; Finance category for 10+ hours</strong>.</li>
+                <li data-tags="creator campaigns influencer data crossborder">Built the global creator marketing system from 0 to 1; drove <strong>300+ creator collaborations and 30M+ views in one month</strong> while building a reusable UGC/KOC network spanning <strong>hundreds of creators</strong>.</li>
+                <li data-tags="creator partnerships community events crossborder">Lead social, PR, newsletters, events, campus, and offline marketing; co-produced a Los Angeles Creator &amp; Founder event attended by <strong>300+ creators and 100+ entrepreneurs</strong>.</li>
+                <li data-tags="partnerships community data">Recruit and manage global marketing interns and campus teams, partnering with <strong>40+ universities</strong>; use PostHog and campaign data to guide acquisition, activation, and conversion decisions.</li>
+              </ul>
+              <div class="tags"><span class="tag">Global GTM</span><span class="tag">AI product</span><span class="tag">Creator</span><span class="tag">Launches</span></div>
+            </article>
+
             <article class="case-card" data-tags="creator campaigns influencer partnerships community events data ai crossborder" data-index="1">
               <div class="card-kicker">AI Consumer Growth</div>
               <h3>DITTO.AI: integrated campus, creator, partner, and field marketing</h3>
@@ -1391,12 +1460,18 @@
     </main>
 
     <div class="edit-toolbar" id="editToolbar" aria-live="polite">
-      <strong>Local edit mode</strong>
-      <span id="editStatus">Click page text to edit. Drafts stay in this browser.</span>
-      <span class="edit-spacer" aria-hidden="true"></span>
-      <button type="button" id="copyEditsButton">Copy changes</button>
-      <button type="button" id="clearEditsButton">Clear drafts</button>
-      <button type="button" id="exitEditButton">Exit edit mode</button>
+      <button type="button" class="edit-toggle-button" id="editToggleButton" aria-expanded="false" aria-controls="editToolbarPanel">
+        <span>Local edit</span>
+        <em id="editDraftCount">0 drafts</em>
+      </button>
+      <div class="edit-toolbar-panel" id="editToolbarPanel">
+        <strong>Local edit mode</strong>
+        <span id="editStatus">Click page text to edit. Drafts stay in this browser.</span>
+        <span class="edit-spacer" aria-hidden="true"></span>
+        <button type="button" id="copyEditsButton">Copy changes</button>
+        <button type="button" id="clearEditsButton">Clear drafts</button>
+        <button type="button" id="exitEditButton">Exit edit mode</button>
+      </div>
     </div>
 
     <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
@@ -1550,6 +1625,9 @@
         "#cases .section-kicker": "排序后的经历证据",
         "#cases h2": "真实经历会根据当前能力视角重新排列。",
         ".case-tools span:nth-child(2)": "选中能力点后，相关经历会排到前面，匹配句子会高亮。",
+        ".case-card[data-index='0'] .card-kicker": "全球 AI GTM",
+        ".case-card[data-index='0'] h3": "TEAMILY AI：全球 GTM、创作者增长与整合产品发布",
+        ".case-card[data-index='0'] p": "面向人类与 AI 智能体协作平台的市场总监兼 GTM 负责人，通过共享上下文、记忆与工作流推动人机协作。",
         ".case-card[data-index='1'] .card-kicker": "AI 消费产品增长",
         ".case-card[data-index='1'] h3": "DITTO.AI：校园、创作者、合作伙伴和线下场景的综合增长",
         ".case-card[data-index='1'] p": "AI Native dating / social 产品的市场总监与增长负责人，连接合作获客、创意线下激活、社群转化、产品数据和 AI 工作流采用。",
@@ -1610,6 +1688,12 @@
         "#contact .actions .button:nth-child(2)": "<i data-lucide='send'></i>联系我",
         "#system .ownership-card:nth-child(1) p:not(.section-kicker)": "我能从 <strong>市场判断</strong> 一路负责到落地系统：定义定位，搭建 <strong>campaign 和合作伙伴动作</strong>，调动创作者、供应商和社群资源，推动跨团队上线，追踪 KPI 质量，并把早期有效动作沉淀成可复制 playbook。",
         "#system .ownership-card:nth-child(2) p:not(.section-kicker)": "<strong>北美 GTM</strong>、AI 消费产品增长、创作者/KOL 生态、校园/本地社群扩张、合作伙伴获客、线下活动、付费与数据复盘、跨文化团队协作和增长汇报。",
+        ".case-card[data-index='0'] li:nth-child(1)": "加入首月推动官网流量增长 <strong>10 倍</strong>，使 Teamily 成为当月<strong>全球流量增速最快的早期 AI 产品</strong>。",
+        ".case-card[data-index='0'] li:nth-child(2)": "与创始团队共同主导全球市场、增长与 GTM 战略，负责产品定位、核心信息、目标用户、产品发布、用户教育、整合营销及面向市场的传播。",
+        ".case-card[data-index='0'] li:nth-child(3)": "统筹全球产品整合发布，实现 <strong>1,000 万+次跨平台曝光</strong>、<strong>5,000+条相关内容</strong>，并登上 <strong>X“商业与金融”趋势榜第 1 名，持续 10+小时</strong>。",
+        ".case-card[data-index='0'] li:nth-child(4)": "从零搭建全球创作者营销体系，<strong>单月推动 300+次创作者合作、获得 3,000 万+次播放</strong>，并建立覆盖<strong>数百名创作者</strong>的可复用 UGC/KOC 网络。",
+        ".case-card[data-index='0'] li:nth-child(5)": "统筹社交媒体、PR、Newsletter、活动、校园及线下营销；共同策划并落地洛杉矶 Creator & Founder 活动，吸引 <strong>300+名创作者和 100+名企业家</strong>到场。",
+        ".case-card[data-index='0'] li:nth-child(6)": "招募并管理全球市场实习生及校园团队，与 <strong>40+所高校</strong>建立合作；结合 PostHog 与 Campaign 数据分析获客、激活和付费转化。",
         ".case-card[data-index='1'] li:nth-child(1)": "通过校园激活、创作者/influencer 营销、原创视频、field marketing、社群渠道和合作伙伴分发，推动 <strong>800% 用户增长</strong>，累计用户达到 <strong>150K+</strong>。",
         ".case-card[data-index='1'] li:nth-child(2)": "搭建校园病毒式增长矩阵，组合创意海报、爆款线下/游艇活动、influencer marketing、原创短视频、ambassador/社群渠道和转化 follow-up。",
         ".case-card[data-index='1'] li:nth-child(3)": "负责一次重要 partner-led campus campaign 的增长执行，带来 <strong>73K+ 注册</strong>、<strong>32K+ matches</strong>，覆盖 <strong>733 所美国大学</strong>；更广义合作渠道带来 <strong>100K+ sign-ups</strong>。",
@@ -1683,9 +1767,12 @@
       const originalHtml = new Map();
       const originalAttrs = new Map();
       const filterSortWeights = {
-        creator: { 3: 80, 1: 72, 7: 68, 2: 54, 4: 40, 5: 32, 6: 12 },
+        creator: { 0: 100, 3: 80, 1: 72, 7: 68, 2: 54, 4: 40, 5: 32, 6: 12 },
       };
       const editStorageKey = "zheIntegratedMarketingDraftEdits.v1";
+      const editToolbar = document.querySelector("#editToolbar");
+      const editToggleButton = document.querySelector("#editToggleButton");
+      const editDraftCount = document.querySelector("#editDraftCount");
       const editStatus = document.querySelector("#editStatus");
       const copyEditsButton = document.querySelector("#copyEditsButton");
       const clearEditsButton = document.querySelector("#clearEditsButton");
@@ -1751,9 +1838,16 @@
       }
 
       function setEditStatus(message) {
-        if (!editStatus) return;
         const count = draftEntryCount();
+        if (editDraftCount) editDraftCount.textContent = `${count} draft${count === 1 ? "" : "s"}`;
+        if (!editStatus) return;
         editStatus.textContent = message || `${count} local draft edit${count === 1 ? "" : "s"} saved in this browser.`;
+      }
+
+      function toggleEditToolbar() {
+        if (!editToolbar || !editToggleButton) return;
+        const isOpen = editToolbar.classList.toggle("is-open");
+        editToggleButton.setAttribute("aria-expanded", String(isOpen));
       }
 
       function editKeyFor(selector, index) {
@@ -1855,6 +1949,7 @@
       function initEditMode() {
         if (!editMode) return;
         setupEditableTargets();
+        editToggleButton?.addEventListener("click", toggleEditToolbar);
         copyEditsButton?.addEventListener("click", copyDraftEdits);
         clearEditsButton?.addEventListener("click", clearDraftEdits);
         exitEditButton?.addEventListener("click", exitEditMode);
