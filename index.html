@@ -381,6 +381,48 @@
         color: var(--muted);
       }
 
+      .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 16px;
+        margin: 2px 0 0;
+        padding: 0 4px;
+        list-style: none;
+      }
+
+      .social-links a,
+      .featured-writing a {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        min-height: 34px;
+        color: var(--teal);
+        font-size: 14px;
+        font-weight: 750;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      .featured-writing {
+        display: grid;
+        justify-items: start;
+        gap: 4px;
+        padding: 10px 0 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .featured-writing .writing-label {
+        color: var(--rust);
+        font-size: 13px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .case-card .featured-writing p {
+        margin: 0;
+        font-size: 14px;
+      }
+
       .hero-visual {
         position: relative;
         margin: 0;
@@ -1216,6 +1258,11 @@
               <span class="contact-item"><i data-lucide="message-circle"></i>WeChat: chenzheCZZZ</span>
               <span class="contact-item"><i data-lucide="instagram"></i>Instagram: summer_ikiki</span>
             </div>
+            <ul class="social-links">
+              <li><a class="x-account-en" href="https://x.com/summer_ikiki_" target="_blank" rel="noopener noreferrer">X (English)</a></li>
+              <li><a class="x-account-zh" href="https://x.com/Summer_ikiki" target="_blank" rel="noopener noreferrer">X (Chinese)</a></li>
+              <li><a class="rednote-account" href="https://www.rednote.com/user/profile/5f2bb6f4000000000100a1af" target="_blank" rel="noopener noreferrer">Xiaohongshu</a></li>
+            </ul>
           </div>
           <figure class="hero-visual">
             <img src="assets/hero-ai-gtm-workflow.png" alt="Marketing, campaign planning, analytics, and creative workflow materials" />
@@ -1345,6 +1392,12 @@
                 <li data-tags="partnerships community campus data">Recruit and manage global marketing interns and campus teams, partnering with <strong>40+ universities</strong>; use PostHog and campaign data to guide acquisition, activation, and conversion decisions.</li>
                 <li data-tags="creator campaigns ai">Built <strong>Gen AI image and video production workflows</strong> using <strong>Midjourney, Runway, and Kling</strong>, producing multiple high-performing AI videos for product launches, creator campaigns, and social distribution.</li>
               </ul>
+              <div class="featured-writing">
+                <span class="writing-label">Featured Writing</span>
+                <strong class="writing-title">32&times; Growth in One Quarter With a Small Team</strong>
+                <p class="writing-summary">How a small team used each market's feedback to improve the next launch.</p>
+                <a href="https://x.com/summer_ikiki_/status/2117627373533442455" target="_blank" rel="noopener noreferrer"><span class="writing-link">Read on X</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+              </div>
               <div class="tags"><span class="tag">Global GTM</span><span class="tag">AI product</span><span class="tag">Creator</span><span class="tag">Launches</span></div>
             </article>
 
@@ -1630,6 +1683,13 @@
       };
 
       const zhText = {
+        ".x-account-en": "X（英文）",
+        ".x-account-zh": "X（中文）",
+        ".rednote-account": "小红书",
+        ".writing-label": "精选文章",
+        ".writing-title": "小团队如何在一个季度实现 32 倍增长",
+        ".writing-summary": "把一个市场的反馈用到下一个市场，持续改进产品发布。",
+        ".writing-link": "在 X 阅读英文原文",
         ".nav a[href='#outcomes']": "成果",
         ".nav a[href='#capabilities']": "能力",
         ".nav a[href='#cases']": "经历",
@@ -2062,6 +2122,14 @@
           if (!el) return;
           const key = selector + "::" + attr;
           el.setAttribute(attr, activeLanguage === "zh" ? zhValue : originalAttrs.get(key));
+        });
+
+        const socialLinks = document.querySelector(".social-links");
+        const socialOrder = activeLanguage === "zh"
+          ? [".x-account-zh", ".rednote-account", ".x-account-en"]
+          : [".x-account-en", ".x-account-zh", ".rednote-account"];
+        socialOrder.forEach((selector) => {
+          socialLinks.append(socialLinks.querySelector(selector).closest("li"));
         });
 
         applyFocusContent();
