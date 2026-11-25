@@ -384,13 +384,52 @@
       .social-links {
         display: flex;
         flex-wrap: wrap;
-        gap: 4px 16px;
-        margin: 2px 0 0;
-        padding: 0 4px;
+        gap: 2px 12px;
+        margin: 6px 0 0;
+        padding: 0;
         list-style: none;
       }
 
-      .social-links a,
+      .social-links a {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        min-height: 44px;
+        padding: 0 6px;
+        border-radius: 6px;
+        color: var(--muted);
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .social-links a:hover,
+      .social-links a:focus-visible {
+        background: #eff7f6;
+        color: var(--teal);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      .social-links a:focus-visible {
+        outline: 2px solid var(--teal);
+        outline-offset: 2px;
+      }
+
+      .social-links svg {
+        flex: none;
+        width: 16px;
+        height: 16px;
+      }
+
+      .social-links .instagram-icon {
+        color: #9a4269;
+      }
+
+      .social-links .rednote-icon {
+        color: #aa3d47;
+      }
+
       .featured-writing a {
         display: inline-flex;
         align-items: center;
@@ -1256,12 +1295,12 @@
               <a class="contact-item" href="mailto:summer.ikiki@gmail.com"><i data-lucide="mail"></i>summer.ikiki@gmail.com</a>
               <a class="contact-item" href="tel:+14242848889"><i data-lucide="phone"></i>(1) 424-284-8889</a>
               <span class="contact-item"><i data-lucide="message-circle"></i>WeChat: chenzheCZZZ</span>
-              <span class="contact-item"><i data-lucide="instagram"></i>Instagram: summer_ikiki</span>
             </div>
             <ul class="social-links">
-              <li><a class="x-account-en" href="https://x.com/summer_ikiki_" target="_blank" rel="noopener noreferrer">X (English)</a></li>
-              <li><a class="x-account-zh" href="https://x.com/Summer_ikiki" target="_blank" rel="noopener noreferrer">X (Chinese)</a></li>
-              <li><a class="rednote-account" href="https://www.rednote.com/user/profile/5f2bb6f4000000000100a1af" target="_blank" rel="noopener noreferrer">Xiaohongshu</a></li>
+              <li><a href="https://x.com/summer_ikiki_" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23.2 22H17l-4.9-7.5L5.5 22H2.4l7.3-8.3L2 2h6.4l4.5 6.9L18.9 2ZM17.8 20h1.7L7.4 3.9H5.6L17.8 20Z"/></svg><span class="x-account-en">X (English)</span></a></li>
+              <li><a href="https://x.com/Summer_ikiki" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23.2 22H17l-4.9-7.5L5.5 22H2.4l7.3-8.3L2 2h6.4l4.5 6.9L18.9 2ZM17.8 20h1.7L7.4 3.9H5.6L17.8 20Z"/></svg><span class="x-account-zh">X (Chinese)</span></a></li>
+              <li><a href="https://www.rednote.com/user/profile/5f2bb6f4000000000100a1af" target="_blank" rel="noopener noreferrer"><i class="rednote-icon" data-lucide="book-open" aria-hidden="true"></i><span class="rednote-account">Xiaohongshu</span></a></li>
+              <li><a href="https://www.instagram.com/summer_ikiki/" target="_blank" rel="noopener noreferrer"><i class="instagram-icon" data-lucide="instagram" aria-hidden="true"></i><span class="instagram-account">Instagram</span></a></li>
             </ul>
           </div>
           <figure class="hero-visual">
@@ -1801,7 +1840,6 @@
         "#outcomes .metric-card:nth-child(6) span": "作为 Founder / 项目负责人获得互联网+ <strong>国家级银奖</strong> 等国家级创业大赛奖项，累计 <strong>5 项国家级创业奖项</strong>。",
         ".contact-strip .contact-item:nth-child(1)": "<i data-lucide='map-pin'></i>美国加州",
         ".contact-strip .contact-item:nth-child(4)": "<i data-lucide='message-circle'></i>微信：chenzheCZZZ",
-        ".contact-strip .contact-item:nth-child(5)": "<i data-lucide='instagram'></i>Instagram：summer_ikiki",
         ".actions .button.primary": "<i data-lucide='download'></i>下载简历",
         ".hero .actions .button:nth-child(2)": "<i data-lucide='folder-open'></i>作品集",
         "#contact .actions .button.primary": "<i data-lucide='download'></i>下载简历",
@@ -2126,8 +2164,8 @@
 
         const socialLinks = document.querySelector(".social-links");
         const socialOrder = activeLanguage === "zh"
-          ? [".x-account-zh", ".rednote-account", ".x-account-en"]
-          : [".x-account-en", ".x-account-zh", ".rednote-account"];
+          ? [".x-account-zh", ".rednote-account", ".x-account-en", ".instagram-account"]
+          : [".x-account-en", ".x-account-zh", ".rednote-account", ".instagram-account"];
         socialOrder.forEach((selector) => {
           socialLinks.append(socialLinks.querySelector(selector).closest("li"));
         });
